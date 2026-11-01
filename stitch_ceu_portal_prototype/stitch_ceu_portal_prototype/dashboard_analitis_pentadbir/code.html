@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+
+<html lang="ms"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"inverse-surface":"#16324c","surface-tint":"#006492","surface-container":"#e4efff","outline":"#707880","on-secondary-fixed-variant":"#3b4951","surface-bright":"#f8f9ff","surface-container-highest":"#d0e4ff","tertiary-fixed-dim":"#eec14b","tertiary-container":"#947100","error-container":"#ffdad6","on-primary-fixed":"#001e2f","secondary-fixed":"#d6e5ef","background":"#f8f9ff","error":"#ba1a1a","on-secondary-fixed":"#0f1d25","surface-variant":"#d0e4ff","tertiary-fixed":"#ffdf98","on-tertiary-fixed":"#251a00","on-secondary":"#ffffff","inverse-on-surface":"#e9f1ff","inverse-primary":"#8bceff","on-background":"#001d35","on-surface-variant":"#3f484f","surface":"#f8f9ff","on-tertiary-container":"#ffffff","surface-container-low":"#eef4ff","secondary":"#526069","secondary-fixed-dim":"#bac9d3","on-secondary-container":"#56656e","outline-variant":"#bfc7d0","on-tertiary":"#ffffff","on-primary-container":"#ffffff","primary":"#006390","secondary-container":"#d3e2ed","on-primary":"#ffffff","on-surface":"#001d35","primary-fixed":"#c9e6ff","on-error-container":"#93000a","on-tertiary-fixed-variant":"#5a4300","primary-fixed-dim":"#8bceff","on-primary-fixed-variant":"#004b6f","tertiary":"#765900","on-error":"#ffffff","surface-dim":"#c1ddfe","primary-container":"#167db2","surface-container-lowest":"#ffffff","surface-container-high":"#daeaff"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-lg":"1.5rem","gutter-desktop":"1.5rem","space-md":"1rem",margin:"1rem","space-sm":"0.5rem","space-xs":"0.25rem","space-xl":"2rem",gutter:"1rem","margin-desktop":"2rem"},fontFamily:{"headline-xl":["Plus Jakarta Sans"],"body-sm":["Inter"],"label-sm":["Inter"],"title-sm":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-md":["Inter"],"body-md":["Inter"]},fontSize:{"headline-xl":["2rem",{lineHeight:"2.5rem",letterSpacing:"-0.02em",fontWeight:"700"}],"body-sm":["0.75rem",{lineHeight:"1.125rem",fontWeight:"400"}],"label-sm":["0.75rem",{lineHeight:"1rem",letterSpacing:"0.02em",fontWeight:"600"}],"title-sm":["1.125rem",{lineHeight:"1.5rem",fontWeight:"600"}],"headline-xl-mobile":["1.625rem",{lineHeight:"2.125rem",letterSpacing:"-0.015em",fontWeight:"700"}],"body-lg":["1rem",{lineHeight:"1.625rem",fontWeight:"400"}],"headline-lg":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-md":["1.25rem",{lineHeight:"1.75rem",letterSpacing:"-0.005em",fontWeight:"600"}],"label-md":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"0.01em",fontWeight:"600"}],"body-md":["0.875rem",{lineHeight:"1.375rem",fontWeight:"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[250px] bg-inverse-surface text-inverse-on-surface z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.12)]"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center gap-space-sm bg-inverse-surface"><div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary ring-2 ring-primary-fixed-dim"><span class="material-symbols-outlined text-[20px]">verified</span></div><div class="flex flex-col min-w-0"><span class="font-headline-md text-[18px] leading-tight font-bold tracking-tight text-surface-container-lowest truncate">CEU PORTAL</span><span class="font-label-sm text-[11px] leading-tight text-primary-fixed-dim tracking-wide truncate">Admin Command • JSS</span></div></div><div class="px-space-md py-space-sm"><p class="font-label-sm text-surface-container-highest opacity-70 uppercase tracking-wider text-[10px]">Modul Pentadbiran</p></div><nav class="flex flex-col gap-1 px-space-xs" data-active-classes="bg-surface-container-highest/20 text-surface-container-lowest font-label-md border-l-[3px] border-tertiary-fixed-dim pl-[13px]"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-r-lg text-surface-container-highest/90 hover:bg-surface-container-highest/15 hover:text-surface-container-lowest transition-colors font-body-md" data-path="dashboard-analitis" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="truncate">Dashboard &amp; Analitis</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-r-lg text-surface-container-highest/90 hover:bg-surface-container-highest/15 hover:text-surface-container-lowest transition-colors font-body-md" data-path="urus-kalendar-acara" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span class="truncate">Urus Kalendar &amp; Acara</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-r-lg text-surface-container-highest/90 hover:bg-surface-container-highest/15 hover:text-surface-container-lowest transition-colors font-body-md" data-path="urus-memo-dokumen" href="#"><span class="material-symbols-outlined text-[20px]">description</span><span class="truncate">Urus Memo &amp; Dokumen</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-r-lg text-surface-container-highest/90 hover:bg-surface-container-highest/15 hover:text-surface-container-lowest transition-colors font-body-md" data-path="hantar-hebahan-notifikasi" href="#"><span class="material-symbols-outlined text-[20px]">campaign</span><span class="truncate">Hantar Hebahan Notifikasi</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-r-lg text-surface-container-highest/90 hover:bg-surface-container-highest/15 hover:text-surface-container-lowest transition-colors font-body-md" data-path="laporan-kehadiran-rsvp" href="#"><span class="material-symbols-outlined text-[20px]">check_circle</span><span class="truncate">Laporan Kehadiran RSVP</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-r-lg text-surface-container-highest/90 hover:bg-surface-container-highest/15 hover:text-surface-container-lowest transition-colors font-body-md" data-path="direktori-guru-sekolah" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="truncate">Direktori Guru &amp; Sekolah</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-r-lg text-surface-container-highest/90 hover:bg-surface-container-highest/15 hover:text-surface-container-lowest transition-colors font-body-md" data-path="kelulusan-guru-baharu" href="#"><div class="flex items-center gap-space-sm min-w-0"><span class="material-symbols-outlined text-[20px]">how_to_reg</span><span class="truncate">Kelulusan Guru Baharu</span></div><span class="bg-error text-on-error font-label-sm text-[11px] px-2 py-0.5 rounded-full">3</span></a></nav></div><div class="p-space-md bg-inverse-surface/80"><div class="flex items-center justify-between bg-surface-container-highest/10 p-space-sm rounded-xl"><div class="flex items-center gap-space-sm min-w-0"><div class="relative flex-shrink-0"><div class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[20px]">person</span></div><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-tertiary ring-2 ring-inverse-surface"></span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-surface-container-lowest truncate leading-tight">Pegawai Pentadbir UPK</span><span class="font-body-sm text-surface-container-highest/70 truncate leading-tight">admin.upk@moe.bn</span></div></div><a class="p-space-xs text-surface-container-highest/80 hover:text-error-container hover:bg-surface-container-highest/20 rounded-lg transition-colors flex-shrink-0" data-path="log-keluar" href="#" title="Log Keluar"><span class="material-symbols-outlined text-[20px]">logout</span></a></div></div></aside><div class="pl-[250px]"><header class="fixed top-0 left-[250px] right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-sm"><span class="font-label-sm text-secondary">Portal Pentadbiran</span><span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span><span class="font-label-md text-on-surface">Unit Pendidikan Kerjaya</span></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-low text-secondary"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-body-sm text-on-surface-variant">Penyegerakan Google Sheets: Aktif (2m lepas)</span></div><button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary-container text-on-primary font-label-md hover:bg-primary transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">sync</span><span>Segerak Kalendar Sekarang</span></button><button class="relative p-2 rounded-full text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-[10px] flex items-center justify-center font-bold">4</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-background min-h-screen"><div class="p-[28px]"><div class="flex flex-col w-full gap-y-space-lg">
+<!-- Executive Control Header -->
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm">
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex items-center gap-space-xs text-primary font-label-sm tracking-wider uppercase">
+<span class="material-symbols-outlined text-[16px]">analytics</span>
+<span>Pusat Kawalan Eksekutif • UPK JSS</span>
+</div>
+<h1 class="font-headline-lg text-on-surface tracking-tight font-bold">
+        Dashboard Prestasi &amp; Kehadiran
+      </h1>
+<p class="font-body-md text-secondary max-w-3xl">
+        Pemantauan masa nyata penglibatan guru kaunseling kerjaya di 42 buah sekolah kebangsaan &amp; menengah seluruh negara.
+      </p>
+</div>
+<!-- Quick Actions -->
+<div class="flex flex-wrap items-center gap-space-sm flex-shrink-0">
+<button class="group flex items-center gap-space-xs px-space-md py-2.5 rounded-xl bg-primary-container text-on-primary font-label-md hover:bg-primary transition-all shadow-sm active:scale-95" type="button">
+<span class="material-symbols-outlined text-[20px] group-hover:rotate-180 transition-transform duration-500">sync</span>
+<span>Segerak Google Calendar &amp; Sheets</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-xl bg-tertiary text-on-tertiary font-label-md hover:bg-tertiary-container transition-all shadow-sm active:scale-95" type="button">
+<span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+<span>Eksport Ringkasan Eksekutif (PDF)</span>
+</button>
+</div>
+</div>
+<!-- Row 1: KPI Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- KPI 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-secondary uppercase tracking-wider">Jumlah Guru Berdaftar</span>
+<span class="font-headline-xl text-on-surface mt-1">148</span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">group</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center gap-1.5 text-secondary font-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">domain</span>
+<span>Daripada 42 buah sekolah (100% liputan)</span>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-secondary uppercase tracking-wider">Program Aktif Bulan Ini</span>
+<span class="font-headline-xl text-on-surface mt-1">4</span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">event_upcoming</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center gap-1.5 text-secondary font-body-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">category</span>
+<span>2 Bengkel, 2 Mesyuarat Penyelarasan</span>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-secondary uppercase tracking-wider">Purata Kadar Respon RSVP</span>
+<span class="font-headline-xl text-on-surface mt-1">84.5%</span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-[11px]">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+          +5.2%
+        </span>
+<span class="text-secondary font-body-sm">berbanding bulan lepas</span>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-secondary uppercase tracking-wider">Permohonan Menunggu</span>
+<span class="font-headline-xl text-on-surface mt-1">3 Guru</span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed flex items-center justify-center text-tertiary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">person_check</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[11px]">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-ping"></span>
+          3 Menunggu Tindakan
+        </span>
+<span class="text-secondary font-body-sm text-right">Kelulusan akaun</span>
+</div>
+</div>
+</div>
+<!-- Row 2: Charts & Visual Analytics Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Column 1: Attendance Performance Stacked Bars (65% -> 8 cols) -->
+<div class="lg:col-span-8 bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 pb-space-sm">
+<div>
+<h2 class="font-title-sm text-on-surface font-bold">Analitis Status Kehadiran Mengikut Program</h2>
+<p class="font-body-sm text-secondary">Tinjauan agregat pengesahan bagi bulan November 2026</p>
+</div>
+<!-- Legend -->
+<div class="flex items-center gap-space-sm font-label-sm text-[11px] text-on-surface-variant flex-wrap">
+<span class="inline-flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-sm bg-primary"></span> Hadir
+            </span>
+<span class="inline-flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-sm bg-error"></span> Tidak Hadir
+            </span>
+<span class="inline-flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-sm bg-tertiary-fixed-dim"></span> Menunggu
+            </span>
+</div>
+</div>
+<!-- Stacked Representation Graphic -->
+<div class="mt-space-md flex flex-col gap-space-md">
+<!-- Program 1 -->
+<div class="space-y-1.5">
+<div class="flex justify-between items-baseline font-body-sm">
+<span class="font-label-md text-on-surface">Bengkel Bimbingan Kerjaya Siri 1</span>
+<span class="text-secondary font-label-sm">Total: 148 (H: 112 • T: 14 • M: 22)</span>
+</div>
+<div class="w-full h-7 bg-surface-container-low rounded-lg overflow-hidden flex shadow-inner">
+<div class="bg-primary hover:opacity-90 transition-opacity flex items-center justify-center text-on-primary font-label-sm text-[10px]" style="width: 75.6%" title="Hadir: 112">75.6%</div>
+<div class="bg-error hover:opacity-90 transition-opacity flex items-center justify-center text-on-error font-label-sm text-[10px]" style="width: 9.5%" title="Tidak Hadir: 14">9.5%</div>
+<div class="bg-tertiary-fixed-dim hover:opacity-90 transition-opacity flex items-center justify-center text-on-tertiary-fixed font-label-sm text-[10px]" style="width: 14.9%" title="Menunggu: 22">14.9%</div>
+</div>
+</div>
+<!-- Program 2 -->
+<div class="space-y-1.5">
+<div class="flex justify-between items-baseline font-body-sm">
+<span class="font-label-md text-on-surface">Taklimat Biasiswa Lepasan Menengah</span>
+<span class="text-secondary font-label-sm">Total: 148 (H: 130 • T: 8 • M: 10)</span>
+</div>
+<div class="w-full h-7 bg-surface-container-low rounded-lg overflow-hidden flex shadow-inner">
+<div class="bg-primary hover:opacity-90 transition-opacity flex items-center justify-center text-on-primary font-label-sm text-[10px]" style="width: 87.8%" title="Hadir: 130">87.8%</div>
+<div class="bg-error hover:opacity-90 transition-opacity flex items-center justify-center text-on-error font-label-sm text-[10px]" style="width: 5.4%" title="Tidak Hadir: 8">5.4%</div>
+<div class="bg-tertiary-fixed-dim hover:opacity-90 transition-opacity flex items-center justify-center text-on-tertiary-fixed font-label-sm text-[10px]" style="width: 6.8%" title="Menunggu: 10">6.8%</div>
+</div>
+</div>
+<!-- Program 3 -->
+<div class="space-y-1.5">
+<div class="flex justify-between items-baseline font-body-sm">
+<span class="font-label-md text-on-surface">Mesyuarat Penyelarasan Bil. 3/2026</span>
+<span class="text-secondary font-label-sm">Total: 148 (H: 98 • T: 18 • M: 32)</span>
+</div>
+<div class="w-full h-7 bg-surface-container-low rounded-lg overflow-hidden flex shadow-inner">
+<div class="bg-primary hover:opacity-90 transition-opacity flex items-center justify-center text-on-primary font-label-sm text-[10px]" style="width: 66.2%" title="Hadir: 98">66.2%</div>
+<div class="bg-error hover:opacity-90 transition-opacity flex items-center justify-center text-on-error font-label-sm text-[10px]" style="width: 12.2%" title="Tidak Hadir: 18">12.2%</div>
+<div class="bg-tertiary-fixed-dim hover:opacity-90 transition-opacity flex items-center justify-center text-on-tertiary-fixed font-label-sm text-[10px]" style="width: 21.6%" title="Menunggu: 32">21.6%</div>
+</div>
+</div>
+<!-- Program 4 -->
+<div class="space-y-1.5">
+<div class="flex justify-between items-baseline font-body-sm">
+<span class="font-label-md text-on-surface">Karnival TVET Zon Selatan</span>
+<span class="text-secondary font-label-sm">Total: 148 (H: 125 • T: 11 • M: 12)</span>
+</div>
+<div class="w-full h-7 bg-surface-container-low rounded-lg overflow-hidden flex shadow-inner">
+<div class="bg-primary hover:opacity-90 transition-opacity flex items-center justify-center text-on-primary font-label-sm text-[10px]" style="width: 84.5%" title="Hadir: 125">84.5%</div>
+<div class="bg-error hover:opacity-90 transition-opacity flex items-center justify-center text-on-error font-label-sm text-[10px]" style="width: 7.4%" title="Tidak Hadir: 11">7.4%</div>
+<div class="bg-tertiary-fixed-dim hover:opacity-90 transition-opacity flex items-center justify-center text-on-tertiary-fixed font-label-sm text-[10px]" style="width: 8.1%" title="Menunggu: 12">8.1%</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm flex items-center justify-between bg-surface-container-low p-space-sm rounded-xl">
+<span class="text-secondary font-body-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">lightbulb</span>
+          Kadar purata ketidakhadiran berkurang sebanyak 3.8% sejak sistem peringatan WhatsApp diaktifkan.
+        </span>
+<button class="text-primary font-label-sm hover:underline flex items-center gap-0.5 flex-shrink-0" type="button">
+          Analisis Penuh <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Column 2: Regional Donut & Distribution (35% -> 4 cols) -->
+<div class="lg:col-span-4 bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-xs">
+<h2 class="font-title-sm text-on-surface font-bold">Kadar Penglibatan Mengikut Daerah</h2>
+<span class="material-symbols-outlined text-outline text-[20px]">public</span>
+</div>
+<p class="font-body-sm text-secondary">Peratusan kehadiran mengikut zon sekolah</p>
+<!-- Circular Visual Representation -->
+<div class="relative flex items-center justify-center py-space-md">
+<svg class="w-48 h-48 -rotate-90" viewbox="0 0 120 120">
+<!-- Background Ring -->
+<circle class="text-surface-container-high" cx="60" cy="60" fill="none" r="48" stroke="currentColor" stroke-width="14"></circle>
+<!-- Temburong: 92% segment -->
+<circle class="text-tertiary" cx="60" cy="60" fill="none" r="48" stroke="currentColor" stroke-dasharray="301.6" stroke-dashoffset="65" stroke-linecap="round" stroke-width="14"></circle>
+<!-- Brunei-Muara: 88% segment overlay -->
+<circle class="text-primary" cx="60" cy="60" fill="none" r="48" stroke="currentColor" stroke-dasharray="301.6" stroke-dashoffset="120" stroke-linecap="round" stroke-width="14"></circle>
+<!-- Belait: 85% -->
+<circle class="text-primary-container" cx="60" cy="60" fill="none" r="48" stroke="currentColor" stroke-dasharray="301.6" stroke-dashoffset="190" stroke-linecap="round" stroke-width="14"></circle>
+<!-- Tutong: 82% -->
+<circle class="text-surface-tint" cx="60" cy="60" fill="none" r="48" stroke="currentColor" stroke-dasharray="301.6" stroke-dashoffset="245" stroke-linecap="round" stroke-width="14"></circle>
+</svg>
+<div class="absolute flex flex-col items-center justify-center text-center">
+<span class="font-label-sm text-secondary uppercase text-[10px] tracking-wider">Tertinggi</span>
+<span class="font-headline-md text-on-surface font-bold">92%</span>
+<span class="font-label-sm text-tertiary font-semibold">Temburong</span>
+</div>
+</div>
+<!-- Regional Metrics List -->
+<div class="space-y-2 mt-2">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low font-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="font-label-md text-on-surface">Brunei-Muara</span>
+</div>
+<span class="font-label-md text-on-surface">88%</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low font-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-surface-tint"></span>
+<span class="font-label-md text-on-surface">Tutong</span>
+</div>
+<span class="font-label-md text-on-surface">82%</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low font-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<span class="font-label-md text-on-surface">Belait</span>
+</div>
+<span class="font-label-md text-on-surface">85%</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low font-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+<span class="font-label-md text-on-surface">Temburong</span>
+</div>
+<span class="font-label-md text-tertiary font-bold">92%</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md p-space-sm rounded-xl bg-tertiary-fixed text-on-tertiary-fixed font-body-sm flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary flex-shrink-0 mt-0.5">star</span>
+<p class="font-label-sm text-[12px] leading-snug">
+          Purata respon daerah tertinggi dicatatkan oleh Daerah Temburong (92%) dengan kadar responsif terpantas dalam masa 24 jam.
+        </p>
+</div>
+</div>
+</div>
+<!-- Row 3: Actionable Data Table -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-md">
+<!-- Table Header & Filters -->
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md">
+<div>
+<h2 class="font-title-sm text-on-surface font-bold">Status Pengesahan Kehadiran Terkini</h2>
+<p class="font-body-sm text-secondary">Semakan status penyegerakan masa nyata &amp; rekod log penyertaan guru</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Search Input -->
+<div class="relative min-w-[240px]">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[20px]">search</span>
+<input class="w-full pl-10 pr-3 py-2 rounded-xl bg-surface-container-lowest text-on-surface font-body-sm outline-none shadow-sm focus:ring-2 focus:ring-primary transition-all placeholder:text-secondary" placeholder="Cari program / acara..." type="text"/>
+</div>
+<!-- Category Dropdown Filter -->
+<div class="relative">
+<select class="appearance-none pl-3 pr-8 py-2 rounded-xl bg-surface-container-low text-on-surface font-label-md text-[13px] outline-none cursor-pointer focus:ring-2 focus:ring-primary shadow-sm">
+<option>Semua Kategori</option>
+<option>Bengkel &amp; Latihan</option>
+<option>Mesyuarat Rasmi</option>
+<option>Karnival &amp; Pameran</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-secondary text-[18px] pointer-events-none">expand_more</span>
+</div>
+<!-- CSV Export Button -->
+<button class="flex items-center gap-1.5 px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface-variant font-label-md hover:bg-surface-container transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">download</span>
+<span>Muat Turun CSV Kehadiran</span>
+</button>
+</div>
+</div>
+<!-- Table Container -->
+<div class="w-full overflow-x-auto rounded-xl">
+<table class="w-full text-left font-body-sm">
+<thead class="bg-surface-container-high text-on-surface uppercase font-label-sm text-[11px] tracking-wider">
+<tr>
+<th class="py-3 px-4">Program / Acara</th>
+<th class="py-3 px-4">Tarikh &amp; Masa</th>
+<th class="py-3 px-4">Sasaran Guru</th>
+<th class="py-3 px-3 text-center">Hadir</th>
+<th class="py-3 px-3 text-center">Tidak</th>
+<th class="py-3 px-3 text-center">Menunggu</th>
+<th class="py-3 px-4">Status Segerak</th>
+<th class="py-3 px-4 text-right">Tindakan</th>
+</tr>
+</thead>
+<tbody class="divide-y-0">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-lowest">
+<td class="py-4 px-4 font-label-md text-on-surface">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>Bengkel Bimbingan Kerjaya Siri 1/2026</span>
+</div>
+</td>
+<td class="py-4 px-4 text-secondary whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-sm text-on-surface">10 Nov 2026</span>
+<span class="text-[11px]">08:30 Pagi</span>
+</div>
+</td>
+<td class="py-4 px-4 text-on-surface-variant">Semua Guru Kluster 1-4</td>
+<td class="py-4 px-3 text-center">
+<span class="inline-flex px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-primary">112</span>
+</td>
+<td class="py-4 px-3 text-center">
+<span class="inline-flex px-2 py-0.5 rounded-full bg-error-container font-label-sm text-on-error-container">14</span>
+</td>
+<td class="py-4 px-3 text-center">
+<span class="inline-flex px-2 py-0.5 rounded-full bg-tertiary-fixed font-label-sm text-on-tertiary-fixed">22</span>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-low text-primary font-label-sm text-[11px]">
+<span class="material-symbols-outlined text-[14px]">cloud_done</span>
+                Google Sheets Auto-Sync
+              </span>
+</td>
+<td class="py-4 px-4 text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1.5">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-sm transition-colors" title="Lihat Senarai Nama" type="button">
+                  Senarai Nama
+                </button>
+<button class="p-1.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container-low transition-colors" title="Hantar Peringatan E-mel" type="button">
+<span class="material-symbols-outlined text-[18px]">forward_to_inbox</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 (Zebra) -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-low/40">
+<td class="py-4 px-4 font-label-md text-on-surface">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Taklimat Biasiswa Lepasan Menengah 2026</span>
+</div>
+</td>
+<td class="py-4 px-4 text-secondary whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-sm text-on-surface">17 Nov 2026</span>
+<span class="text-[11px]">09:00 Pagi</span>
+</div>
+</td>
+<td class="py-4 px-4 text-on-surface-variant">Sekolah Menengah &amp; Maktab Sains</td>
+<td class="py-4 px-3 text-center">
+<span class="inline-flex px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-primary">130</span>
+</td>
+<td class="py-4 px-3 text-center">
+<span class="inline-flex px-2 py-0.5 rounded-full bg-error-container font-label-sm text-on-error-container">8</span>
+</td>
+<td class="py-4 px-3 text-center">
+<span class="inline-flex px-2 py-0.5 rounded-full bg-tertiary-fixed font-label-sm text-on-tertiary-fixed">10</span>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-low text-primary font-label-sm text-[11px]">
+<span class="material-symbols-outlined text-[14px]">cloud_done</span>
+                Google Sheets Auto-Sync
+              </span>
+</td>
+<td class="py-4 px-4 text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1.5">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-sm transition-colors" title="Lihat Senarai Nama" type="button">
+                  Senarai Nama
+                </button>
+<button class="p-1.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container-low transition-colors" title="Hantar Peringatan E-mel" type="button">
+<span class="material-symbols-outlined text-[18px]">forward_to_inbox</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-lowest">
+<td class="py-4 px-4 font-label-md text-on-surface">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Mesyuarat Penyelarasan Bil. 3/2026</span>
+</div>
+</td>
+<td class="py-4 px-4 text-secondary whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-sm text-on-surface">24 Nov 2026</span>
+<span class="text-[11px]">02:00 Petang</span>
+</div>
+</td>
+<td class="py-4 px-4 text-on-surface-variant">Ketua Guru Kaunseling Daerah</td>
+<td class="py-4 px-3 text-center">
+<span class="inline-flex px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-primary">98</span>
+</td>
+<td class="py-4 px-3 text-center">
+<span class="inline-flex px-2 py-0.5 rounded-full bg-error-container font-label-sm text-on-error-container">18</span>
+</td>
+<td class="py-4 px-3 text-center">
+<span class="inline-flex px-2 py-0.5 rounded-full bg-tertiary-fixed font-label-sm text-on-tertiary-fixed">32</span>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-low text-primary font-label-sm text-[11px]">
+<span class="material-symbols-outlined text-[14px]">cloud_done</span>
+                Google Sheets Auto-Sync
+              </span>
+</td>
+<td class="py-4 px-4 text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1.5">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-sm transition-colors" title="Lihat Senarai Nama" type="button">
+                  Senarai Nama
+                </button>
+<button class="p-1.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container-low transition-colors" title="Hantar Peringatan E-mel" type="button">
+<span class="material-symbols-outlined text-[18px]">forward_to_inbox</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer Pagination / Quick Summary -->
+<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-space-sm pt-space-xs text-secondary font-body-sm">
+<div class="flex items-center gap-2">
+<span>Menunjukkan 3 daripada 4 acara aktif</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="p-1 rounded-lg hover:bg-surface-container-low text-secondary disabled:opacity-40" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<span class="px-3 py-1 rounded-lg bg-primary text-on-primary font-label-sm">1</span>
+<button class="p-1 rounded-lg hover:bg-surface-container-low text-secondary" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Row 4: Direct Executive Action Callout Footer -->
+<div class="relative overflow-hidden bg-gradient-to-r from-tertiary-fixed via-tertiary-fixed-dim/70 to-tertiary-fixed p-space-lg rounded-2xl shadow-sm">
+<div class="relative z-10 flex flex-col md:flex-row md:items-center md:justify-between gap-space-md">
+<div class="flex items-start gap-space-md max-w-3xl">
+<div class="w-12 h-12 rounded-xl bg-tertiary text-on-tertiary flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<div>
+<span class="font-label-sm text-tertiary uppercase tracking-wider font-bold">Penyediaan Laporan Rasmi Jabatan</span>
+<h3 class="font-title-sm text-on-tertiary-fixed font-bold mt-0.5">Penyerahan Mandatori Bulanan ke Meja Pengarah JSS</h3>
+<p class="font-body-md text-on-tertiary-fixed-variant mt-1">
+            Tekan butang di sebelah untuk menjana dokumen rumusan kehadiran eksekutif dan menghantarnya terus ke peti masuk Ketua Unit &amp; Pengarah Jabatan Sekolah-Sekolah.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm flex-shrink-0">
+<button class="flex items-center gap-space-xs px-space-lg py-3 rounded-xl bg-tertiary text-on-tertiary font-label-md hover:bg-tertiary-container transition-all shadow-md active:scale-95" type="button">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>Jana Laporan PDF Rasmi &amp; Emel ke UPK</span>
+</button>
+</div>
+</div>
+</div>
+</div></div></main></div></body></html>

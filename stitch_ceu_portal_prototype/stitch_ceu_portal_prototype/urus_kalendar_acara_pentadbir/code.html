@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+
+<html lang="ms"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"inverse-surface":"#16324c","surface-tint":"#006492","surface-container":"#e4efff","outline":"#707880","on-secondary-fixed-variant":"#3b4951","surface-bright":"#f8f9ff","surface-container-highest":"#d0e4ff","tertiary-fixed-dim":"#eec14b","tertiary-container":"#947100","error-container":"#ffdad6","on-primary-fixed":"#001e2f","secondary-fixed":"#d6e5ef","background":"#f8f9ff","error":"#ba1a1a","on-secondary-fixed":"#0f1d25","surface-variant":"#d0e4ff","tertiary-fixed":"#ffdf98","on-tertiary-fixed":"#251a00","on-secondary":"#ffffff","inverse-on-surface":"#e9f1ff","inverse-primary":"#8bceff","on-background":"#001d35","on-surface-variant":"#3f484f","surface":"#f8f9ff","on-tertiary-container":"#ffffff","surface-container-low":"#eef4ff","secondary":"#526069","secondary-fixed-dim":"#bac9d3","on-secondary-container":"#56656e","outline-variant":"#bfc7d0","on-tertiary":"#ffffff","on-primary-container":"#ffffff","primary":"#006390","secondary-container":"#d3e2ed","on-primary":"#ffffff","on-surface":"#001d35","primary-fixed":"#c9e6ff","on-error-container":"#93000a","on-tertiary-fixed-variant":"#5a4300","primary-fixed-dim":"#8bceff","on-primary-fixed-variant":"#004b6f","tertiary":"#765900","on-error":"#ffffff","surface-dim":"#c1ddfe","primary-container":"#167db2","surface-container-lowest":"#ffffff","surface-container-high":"#daeaff"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-lg":"1.5rem","gutter-desktop":"1.5rem","space-md":"1rem",margin:"1rem","space-sm":"0.5rem","space-xs":"0.25rem","space-xl":"2rem",gutter:"1rem","margin-desktop":"2rem"},fontFamily:{"headline-xl":["Plus Jakarta Sans"],"body-sm":["Inter"],"label-sm":["Inter"],"title-sm":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-md":["Inter"],"body-md":["Inter"]},fontSize:{"headline-xl":["2rem",{lineHeight:"2.5rem",letterSpacing:"-0.02em",fontWeight:"700"}],"body-sm":["0.75rem",{lineHeight:"1.125rem",fontWeight:"400"}],"label-sm":["0.75rem",{lineHeight:"1rem",letterSpacing:"0.02em",fontWeight:"600"}],"title-sm":["1.125rem",{lineHeight:"1.5rem",fontWeight:"600"}],"headline-xl-mobile":["1.625rem",{lineHeight:"2.125rem",letterSpacing:"-0.015em",fontWeight:"700"}],"body-lg":["1rem",{lineHeight:"1.625rem",fontWeight:"400"}],"headline-lg":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-md":["1.25rem",{lineHeight:"1.75rem",letterSpacing:"-0.005em",fontWeight:"600"}],"label-md":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"0.01em",fontWeight:"600"}],"body-md":["0.875rem",{lineHeight:"1.375rem",fontWeight:"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[250px] bg-inverse-surface text-inverse-on-surface z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.12)]"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center gap-space-sm bg-inverse-surface"><div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary ring-2 ring-primary-fixed-dim"><span class="material-symbols-outlined text-[20px]">verified</span></div><div class="flex flex-col min-w-0"><span class="font-headline-md text-[18px] leading-tight font-bold tracking-tight text-surface-container-lowest truncate">CEU PORTAL</span><span class="font-label-sm text-[11px] leading-tight text-primary-fixed-dim tracking-wide truncate">Admin Command • JSS</span></div></div><div class="px-space-md py-space-sm"><p class="font-label-sm text-surface-container-highest opacity-70 uppercase tracking-wider text-[10px]">Modul Pentadbiran</p></div><nav class="flex flex-col gap-1 px-space-xs" data-active-classes="bg-surface-container-highest/20 text-surface-container-lowest font-label-md border-l-[3px] border-tertiary-fixed-dim pl-[13px]"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-r-lg text-surface-container-highest/90 hover:bg-surface-container-highest/15 hover:text-surface-container-lowest transition-colors font-body-md" data-path="dashboard-analitis" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="truncate">Dashboard &amp; Analitis</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-r-lg text-surface-container-highest/90 hover:bg-surface-container-highest/15 hover:text-surface-container-lowest transition-colors font-body-md" data-path="urus-kalendar-acara" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span class="truncate">Urus Kalendar &amp; Acara</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-r-lg text-surface-container-highest/90 hover:bg-surface-container-highest/15 hover:text-surface-container-lowest transition-colors font-body-md" data-path="urus-memo-dokumen" href="#"><span class="material-symbols-outlined text-[20px]">description</span><span class="truncate">Urus Memo &amp; Dokumen</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-r-lg text-surface-container-highest/90 hover:bg-surface-container-highest/15 hover:text-surface-container-lowest transition-colors font-body-md" data-path="hantar-hebahan-notifikasi" href="#"><span class="material-symbols-outlined text-[20px]">campaign</span><span class="truncate">Hantar Hebahan Notifikasi</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-r-lg text-surface-container-highest/90 hover:bg-surface-container-highest/15 hover:text-surface-container-lowest transition-colors font-body-md" data-path="laporan-kehadiran-rsvp" href="#"><span class="material-symbols-outlined text-[20px]">check_circle</span><span class="truncate">Laporan Kehadiran RSVP</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-r-lg text-surface-container-highest/90 hover:bg-surface-container-highest/15 hover:text-surface-container-lowest transition-colors font-body-md" data-path="direktori-guru-sekolah" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="truncate">Direktori Guru &amp; Sekolah</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-r-lg text-surface-container-highest/90 hover:bg-surface-container-highest/15 hover:text-surface-container-lowest transition-colors font-body-md" data-path="kelulusan-guru-baharu" href="#"><div class="flex items-center gap-space-sm min-w-0"><span class="material-symbols-outlined text-[20px]">how_to_reg</span><span class="truncate">Kelulusan Guru Baharu</span></div><span class="bg-error text-on-error font-label-sm text-[11px] px-2 py-0.5 rounded-full">3</span></a></nav></div><div class="p-space-md bg-inverse-surface/80"><div class="flex items-center justify-between bg-surface-container-highest/10 p-space-sm rounded-xl"><div class="flex items-center gap-space-sm min-w-0"><div class="relative flex-shrink-0"><div class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[20px]">person</span></div><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-tertiary ring-2 ring-inverse-surface"></span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-surface-container-lowest truncate leading-tight">Pegawai Pentadbir UPK</span><span class="font-body-sm text-surface-container-highest/70 truncate leading-tight">admin.upk@moe.bn</span></div></div><a class="p-space-xs text-surface-container-highest/80 hover:text-error-container hover:bg-surface-container-highest/20 rounded-lg transition-colors flex-shrink-0" data-path="log-keluar" href="#" title="Log Keluar"><span class="material-symbols-outlined text-[20px]">logout</span></a></div></div></aside><div class="pl-[250px]"><header class="fixed top-0 left-[250px] right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-sm"><span class="font-label-sm text-secondary">Portal Pentadbiran</span><span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span><span class="font-label-md text-on-surface">Unit Pendidikan Kerjaya</span></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-low text-secondary"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-body-sm text-on-surface-variant">Penyegerakan Google Sheets: Aktif (2m lepas)</span></div><button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary-container text-on-primary font-label-md hover:bg-primary transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">sync</span><span>Segerak Kalendar Sekarang</span></button><button class="relative p-2 rounded-full text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-[10px] flex items-center justify-center font-bold">4</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Stats & Integration Status Banner -->
+<section class="p-space-lg">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1 max-w-2xl">
+<div class="flex items-center gap-space-xs text-primary font-label-sm">
+<span class="material-symbols-outlined text-[18px]">cloud_sync</span>
+<span class="tracking-wide uppercase">Google Workspace Education API v3</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="text-tertiary font-label-sm">Autentikasi Aktif</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Pengurusan Kalendar &amp; Acara Unit</h1>
+<p class="font-body-md text-secondary leading-relaxed">
+          Penyegerakan dwi-hala Google Calendar API rasmi UPK &amp; penjadualan program guru kerjaya seluruh kluster sekolah.
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md transition-all shadow-sm" id="btn-sync-now" type="button">
+<span class="material-symbols-outlined text-[18px]" id="sync-icon">sync</span>
+<span id="sync-text">Segerak Kalendar Sekarang</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary font-label-md hover:bg-primary transition-all shadow-md" id="btn-new-program-scroll" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>+ Cipta Program Baharu</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Filter & Analytics Toolbar -->
+<section class="px-space-lg pb-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-sm flex-1">
+<!-- Search Input -->
+<div class="relative min-w-[240px] flex-1 max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span>
+<input class="w-full pl-9 pr-space-md py-2 text-on-surface bg-surface-container-low rounded-lg font-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all placeholder:text-outline" id="filter-search" placeholder="Cari tajuk program, lokasi, atau penganjur..." type="text"/>
+</div>
+<!-- Category Dropdown -->
+<div class="relative">
+<select class="appearance-none bg-surface-container-low hover:bg-surface-container text-on-surface px-space-md py-2 pr-8 rounded-lg font-label-md text-label-md focus:outline-none cursor-pointer transition-colors" id="filter-category">
+<option value="Semua">Semua Kategori</option>
+<option value="Bengkel">Bengkel Kemahiran</option>
+<option value="Mesyuarat">Mesyuarat Penyelarasan</option>
+<option value="Taklimat">Taklimat Hala Tuju</option>
+<option value="Lawatan">Lawatan Industri / Institusi</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+<!-- Month Dropdown -->
+<div class="relative">
+<select class="appearance-none bg-surface-container-low hover:bg-surface-container text-on-surface px-space-md py-2 pr-8 rounded-lg font-label-md text-label-md focus:outline-none cursor-pointer transition-colors" id="filter-month">
+<option value="11-2026">November 2026</option>
+<option value="12-2026">Disember 2026</option>
+<option value="01-2027">Januari 2027</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">calendar_month</span>
+</div>
+</div>
+<!-- Quick Metrics Pill Group -->
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded-lg">
+<span class="font-body-sm text-secondary">Dipaparkan:</span>
+<span class="font-label-md text-primary bg-surface-container-lowest px-2 py-0.5 rounded shadow-sm" id="active-count-badge">4 Acara Terjadual</span>
+</div>
+</div>
+</section>
+<!-- 2-Column Split: Active Events List (60%) & Interactive Form Panel (40%) -->
+<section class="px-space-lg pb-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<!-- LEFT COLUMN (60% Desktop: col-span-7) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Summary Mini Cards Row -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-sm text-secondary">Jumlah Acara (Bulan Ini)</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">14</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">event_available</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-sm text-secondary">RSVP Guru Aktif</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">186 Guru</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[22px]">how_to_reg</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-sm text-secondary">Kadar Sinkronisasi</span>
+<span class="font-headline-md text-headline-md text-tertiary font-bold">100% Sah</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[22px]">published_with_changes</span>
+</div>
+</div>
+</div>
+<!-- Schedule / Program Table List View -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">calendar_today</span>
+<h2 class="font-title-sm text-title-sm text-on-surface">Senarai Program Rasmi UPK (November 2026)</h2>
+</div>
+<span class="font-label-sm text-secondary bg-surface-container-lowest px-2.5 py-1 rounded-full shadow-sm">
+              Status Google Cal: Aktif
+            </span>
+</div>
+<div class="divide-y divide-surface-container-low">
+<!-- Event Row 1 -->
+<article class="p-space-md hover:bg-surface-container-low/60 transition-colors flex flex-col gap-space-sm" data-category="Bengkel">
+<div class="flex flex-wrap items-start justify-between gap-space-xs">
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-primary-fixed text-on-primary-fixed">Bengkel</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-primary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Tersinkron ✅
+                    </span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-bold">
+                      RSVP Wajib
+                    </span>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface hover:text-primary transition-colors font-bold mt-1">
+                    Bengkel Pengukuhan Bimbingan Profil Kerjaya Digital Siri 2/2026
+                  </h3>
+</div>
+<div class="flex items-center gap-1 self-start">
+<button class="p-1.5 rounded-lg text-secondary hover:bg-surface-container-high hover:text-primary transition-colors" title="Sunting Maklumat" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:bg-surface-container-high hover:text-error transition-colors" title="Batal / Padam Acara" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Metadata Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-2 gap-x-4 pt-1 font-body-sm text-secondary">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+<span>14 Nov 2026 • 08:30 PG - 12:30 PTG</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">location_on</span>
+<span class="text-on-surface">Dewan Utama PGGMB, BSB</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">groups</span>
+<span>Sasaran: Semua Kluster (Menengah)</span>
+</div>
+</div>
+<!-- Bottom Bar with RSVP count & direct link -->
+<div class="pt-2 flex flex-wrap items-center justify-between gap-space-xs text-body-sm text-secondary">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-1 text-on-surface font-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+                    64 Hadir
+                  </span>
+<span class="text-outline">/</span>
+<span class="text-secondary">8 Tidak Hadir</span>
+<span class="text-outline">/</span>
+<span class="text-secondary">4 Wakil</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-2.5 py-1 text-label-sm font-label-sm rounded bg-surface-container hover:bg-surface-container-high text-primary transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">visibility</span> Lihat Senarai Hadir
+                  </button>
+<a class="px-2.5 py-1 text-label-sm font-label-sm rounded bg-surface-container-low text-secondary hover:text-on-surface transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[14px]">open_in_new</span> Google Cal
+                  </a>
+</div>
+</div>
+</article>
+<!-- Event Row 2 -->
+<article class="p-space-md hover:bg-surface-container-low/60 transition-colors flex flex-col gap-space-sm" data-category="Mesyuarat">
+<div class="flex flex-wrap items-start justify-between gap-space-xs">
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-secondary-container text-on-secondary-fixed">Mesyuarat</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-primary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Tersinkron ✅
+                    </span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface-variant font-label-sm">
+                      RSVP Pilihan
+                    </span>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface hover:text-primary transition-colors font-bold mt-1">
+                    Mesyuarat Penyelarasan Penempatan Latihan Industri Tingkatan Enam
+                  </h3>
+</div>
+<div class="flex items-center gap-1 self-start">
+<button class="p-1.5 rounded-lg text-secondary hover:bg-surface-container-high hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:bg-surface-container-high hover:text-error transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-2 gap-x-4 pt-1 font-body-sm text-secondary">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+<span>19 Nov 2026 • 02:00 PTG - 04:30 PTG</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">videocam</span>
+<span class="text-primary font-label-sm">Google Meet (Pautan Disediakan)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">groups</span>
+<span>Pusat Tingkatan Enam Sahaja</span>
+</div>
+</div>
+<div class="pt-2 flex flex-wrap items-center justify-between gap-space-xs text-body-sm text-secondary">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-1 text-on-surface font-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+                    18 Hadir
+                  </span>
+<span class="text-outline">/</span>
+<span class="text-secondary">2 Tidak Hadir</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-2.5 py-1 text-label-sm font-label-sm rounded bg-surface-container hover:bg-surface-container-high text-primary transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">visibility</span> Lihat Hadir
+                  </button>
+<a class="px-2.5 py-1 text-label-sm font-label-sm rounded bg-surface-container-low text-secondary hover:text-on-surface transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[14px]">videocam</span> Masuk Meet
+                  </a>
+</div>
+</div>
+</article>
+<!-- Event Row 3 -->
+<article class="p-space-md hover:bg-surface-container-low/60 transition-colors flex flex-col gap-space-sm" data-category="Taklimat">
+<div class="flex flex-wrap items-start justify-between gap-space-xs">
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-tertiary-container text-on-tertiary-container">Taklimat</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-primary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Tersinkron ✅
+                    </span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-bold">
+                      RSVP Wajib
+                    </span>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface hover:text-primary transition-colors font-bold mt-1">
+                    Taklimat Biasiswa Luar Negara &amp; Panduan Temuduga Kemasukan IPT
+                  </h3>
+</div>
+<div class="flex items-center gap-1 self-start">
+<button class="p-1.5 rounded-lg text-secondary hover:bg-surface-container-high hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:bg-surface-container-high hover:text-error transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-2 gap-x-4 pt-1 font-body-sm text-secondary">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+<span>24 Nov 2026 • 09:00 PG - 11:30 PG</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">location_on</span>
+<span class="text-on-surface">Auditorium JSS, Tingkat 3</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">groups</span>
+<span>Kluster 1 &amp; Kluster 2</span>
+</div>
+</div>
+<div class="pt-2 flex flex-wrap items-center justify-between gap-space-xs text-body-sm text-secondary">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-1 text-on-surface font-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+                    42 Hadir
+                  </span>
+<span class="text-outline">/</span>
+<span class="text-secondary">3 Menunggu Jawapan</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-2.5 py-1 text-label-sm font-label-sm rounded bg-surface-container hover:bg-surface-container-high text-primary transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">visibility</span> Lihat Hadir
+                  </button>
+<a class="px-2.5 py-1 text-label-sm font-label-sm rounded bg-surface-container-low text-secondary hover:text-on-surface transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[14px]">open_in_new</span> Google Cal
+                  </a>
+</div>
+</div>
+</article>
+<!-- Event Row 4 -->
+<article class="p-space-md hover:bg-surface-container-low/60 transition-colors flex flex-col gap-space-sm" data-category="Lawatan">
+<div class="flex flex-wrap items-start justify-between gap-space-xs">
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-primary-fixed-dim text-on-primary-fixed-variant">Lawatan</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-primary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Tersinkron ✅
+                    </span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-bold">
+                      RSVP Wajib
+                    </span>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface hover:text-primary transition-colors font-bold mt-1">
+                    Lawatan Penanda Aras &amp; Sesi Meja Bulat Bersama Industri Tenaga Hijau
+                  </h3>
+</div>
+<div class="flex items-center gap-1 self-start">
+<button class="p-1.5 rounded-lg text-secondary hover:bg-surface-container-high hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:bg-surface-container-high hover:text-error transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-2 gap-x-4 pt-1 font-body-sm text-secondary">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+<span>28 Nov 2026 • 08:00 PG - 01:00 PTG</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">location_on</span>
+<span class="text-on-surface">Kompleks Tenaga Seria, Belait</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">groups</span>
+<span>Wakil Guru Kerjaya Daerah Belait &amp; Tutong</span>
+</div>
+</div>
+<div class="pt-2 flex flex-wrap items-center justify-between gap-space-xs text-body-sm text-secondary">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-1 text-on-surface font-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+                    26 Hadir
+                  </span>
+<span class="text-outline">/</span>
+<span class="text-secondary">4 Wakil</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-2.5 py-1 text-label-sm font-label-sm rounded bg-surface-container hover:bg-surface-container-high text-primary transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">visibility</span> Lihat Hadir
+                  </button>
+<a class="px-2.5 py-1 text-label-sm font-label-sm rounded bg-surface-container-low text-secondary hover:text-on-surface transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[14px]">open_in_new</span> Google Cal
+                  </a>
+</div>
+</div>
+</article>
+</div>
+</div>
+<!-- Visual Mini Calendar Snapshot: Interactive Inspection -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm border-b border-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[20px]">calendar_month</span>
+<span class="font-title-sm text-title-sm text-on-surface font-bold">Paparan Kalendar Pantas (November 2026)</span>
+</div>
+<div class="flex items-center gap-2 text-label-sm text-secondary">
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span> Bengkel</span>
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-secondary"></span> Mesyuarat</span>
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span> Taklimat</span>
+</div>
+</div>
+<!-- Calendar 7-col grid -->
+<div class="grid grid-cols-7 gap-1 text-center font-label-sm text-secondary pb-2">
+<div>Isn</div><div>Sel</div><div>Rab</div><div>Kha</div><div>Jum</div><div>Sab</div><div>Ahd</div>
+</div>
+<div class="grid grid-cols-7 gap-1 text-center font-body-sm text-on-surface">
+<!-- Empty offset days -->
+<div class="p-2 text-outline-variant bg-surface-container-low/30 rounded">27</div>
+<div class="p-2 text-outline-variant bg-surface-container-low/30 rounded">28</div>
+<div class="p-2 text-outline-variant bg-surface-container-low/30 rounded">29</div>
+<div class="p-2 text-outline-variant bg-surface-container-low/30 rounded">30</div>
+<div class="p-2 text-outline-variant bg-surface-container-low/30 rounded">31</div>
+<div class="p-2 bg-surface-container-low/50 rounded">1</div>
+<div class="p-2 bg-surface-container-low/50 rounded">2</div>
+<div class="p-2 bg-surface-container-low/50 rounded">3</div>
+<div class="p-2 bg-surface-container-low/50 rounded">4</div>
+<div class="p-2 bg-surface-container-low/50 rounded">5</div>
+<div class="p-2 bg-surface-container-low/50 rounded">6</div>
+<div class="p-2 bg-surface-container-low/50 rounded">7</div>
+<div class="p-2 bg-surface-container-low/50 rounded">8</div>
+<div class="p-2 bg-surface-container-low/50 rounded">9</div>
+<div class="p-2 bg-surface-container-low/50 rounded">10</div>
+<div class="p-2 bg-surface-container-low/50 rounded">11</div>
+<div class="p-2 bg-surface-container-low/50 rounded">12</div>
+<div class="p-2 bg-surface-container-low/50 rounded">13</div>
+<!-- Active 14 (Bengkel) -->
+<div class="p-2 bg-primary-container text-on-primary font-bold rounded shadow-sm relative">
+              14
+              <span class="absolute bottom-1 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span>
+</div>
+<div class="p-2 bg-surface-container-low/50 rounded">15</div>
+<div class="p-2 bg-surface-container-low/50 rounded">16</div>
+<div class="p-2 bg-surface-container-low/50 rounded">17</div>
+<div class="p-2 bg-surface-container-low/50 rounded">18</div>
+<!-- Active 19 (Mesyuarat) -->
+<div class="p-2 bg-secondary-container text-on-secondary-fixed font-bold rounded shadow-sm relative">
+              19
+              <span class="absolute bottom-1 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-primary"></span>
+</div>
+<div class="p-2 bg-surface-container-low/50 rounded">20</div>
+<div class="p-2 bg-surface-container-low/50 rounded">21</div>
+<div class="p-2 bg-surface-container-low/50 rounded">22</div>
+<div class="p-2 bg-surface-container-low/50 rounded">23</div>
+<!-- Active 24 (Taklimat) -->
+<div class="p-2 bg-tertiary-fixed text-on-tertiary-fixed font-bold rounded shadow-sm relative">
+              24
+              <span class="absolute bottom-1 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+</div>
+<div class="p-2 bg-surface-container-low/50 rounded">25</div>
+<div class="p-2 bg-surface-container-low/50 rounded">26</div>
+<div class="p-2 bg-surface-container-low/50 rounded">27</div>
+<!-- Active 28 (Lawatan) -->
+<div class="p-2 bg-primary-fixed-dim text-on-primary-fixed-variant font-bold rounded shadow-sm relative">
+              28
+              <span class="absolute bottom-1 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+</div>
+<div class="p-2 bg-surface-container-low/50 rounded">29</div>
+<div class="p-2 bg-surface-container-low/50 rounded">30</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN (40% Desktop: col-span-5) -->
+<div class="lg:col-span-5 sticky top-20" id="form-container">
+<div class="bg-surface-container-lowest rounded-xl shadow-lg border border-surface-container-low p-space-lg flex flex-col gap-space-md">
+<!-- Form Header -->
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-low">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">edit_calendar</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-title-sm text-title-sm text-on-surface font-bold leading-tight">Borang Butiran Program</h2>
+<span class="font-body-sm text-secondary">Cipta atau kemas kini kalendar rasmi</span>
+</div>
+</div>
+<span class="font-label-sm px-2 py-0.5 rounded bg-surface-container text-primary font-semibold">
+              Borang UPK-02
+            </span>
+</div>
+<!-- The Form -->
+<form class="flex flex-col gap-space-md" id="event-admin-form" onsubmit="event.preventDefault();">
+<!-- Program Title -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="prog-title">
+                Tajuk Program / Acara <span class="text-error">*</span>
+</label>
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low focus:bg-surface-container-lowest text-on-surface font-body-md focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all placeholder:text-outline" id="prog-title" placeholder="Contoh: Bengkel Pensijilan Kaunselor Kerjaya Siri 1" required="" type="text"/>
+</div>
+<!-- Category & Priority Row -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="prog-cat">
+                  Kategori Program <span class="text-error">*</span>
+</label>
+<div class="relative">
+<select class="w-full appearance-none px-space-md py-2.5 pr-8 rounded-lg bg-surface-container-low text-on-surface font-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all cursor-pointer" id="prog-cat">
+<option value="Bengkel">Bengkel Kemahiran</option>
+<option value="Mesyuarat">Mesyuarat Penyelarasan</option>
+<option value="Taklimat">Taklimat Hala Tuju</option>
+<option value="Lawatan">Lawatan Institusi/Industri</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="prog-target">
+                  Sasaran Guru <span class="text-error">*</span>
+</label>
+<div class="relative">
+<select class="w-full appearance-none px-space-md py-2.5 pr-8 rounded-lg bg-surface-container-low text-on-surface font-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all cursor-pointer" id="prog-target">
+<option value="all">Semua Guru Kerjaya (Negara)</option>
+<option value="k1-4">Kluster 1, 2, 3, 4</option>
+<option value="secondary">Sekolah Menengah Sahaja</option>
+<option value="pte">Pusat Tingkatan Enam (PTE)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">groups</span>
+</div>
+</div>
+</div>
+<!-- Date Ranges -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="prog-start-date">
+                  Tarikh Mula <span class="text-error">*</span>
+</label>
+<input class="w-full px-space-md py-2 rounded-lg bg-surface-container-low text-on-surface font-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" id="prog-start-date" required="" type="date" value="2026-11-20"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="prog-end-date">
+                  Tarikh Tamat <span class="text-error">*</span>
+</label>
+<input class="w-full px-space-md py-2 rounded-lg bg-surface-container-low text-on-surface font-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" id="prog-end-date" required="" type="date" value="2026-11-20"/>
+</div>
+</div>
+<!-- Time Ranges -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="prog-start-time">
+                  Masa Mula <span class="text-error">*</span>
+</label>
+<input class="w-full px-space-md py-2 rounded-lg bg-surface-container-low text-on-surface font-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" id="prog-start-time" required="" type="time" value="08:30"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="prog-end-time">
+                  Masa Tamat <span class="text-error">*</span>
+</label>
+<input class="w-full px-space-md py-2 rounded-lg bg-surface-container-low text-on-surface font-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" id="prog-end-time" required="" type="time" value="12:30"/>
+</div>
+</div>
+<!-- Mode & Location / Google Meet -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface">Mod Pelaksanaan &amp; Lokasi</label>
+<div class="grid grid-cols-2 gap-space-xs p-1 bg-surface-container-low rounded-lg">
+<button class="py-1.5 rounded text-label-md font-label-md text-center bg-surface-container-lowest text-primary shadow-sm transition-all flex items-center justify-center gap-1" id="tab-mode-physical" type="button">
+<span class="material-symbols-outlined text-[16px]">location_on</span> Fizikal (Bersemuka)
+                </button>
+<button class="py-1.5 rounded text-label-md font-label-md text-center text-secondary hover:text-on-surface transition-all flex items-center justify-center gap-1" id="tab-mode-virtual" type="button">
+<span class="material-symbols-outlined text-[16px]">videocam</span> Maya (Google Meet)
+                </button>
+</div>
+<div class="mt-1" id="mode-input-container">
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low focus:bg-surface-container-lowest text-on-surface font-body-md focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all placeholder:text-outline" id="prog-location" placeholder="Nyatakan bilik / dewan (cth: Dewan Serbaguna UPK, JSS)" type="text"/>
+</div>
+</div>
+<!-- Toggle Switch: RSVP Status -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Aktifkan Pengesahan Kehadiran (RSVP Guru)</span>
+<span class="font-body-sm text-secondary">Guru akan menerima butang Hadir / Tidak / Wakil pada portal mereka</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer flex-shrink-0">
+<input checked="" class="sr-only peer" id="toggle-rsvp" type="checkbox"/>
+<div class="w-11 h-6 bg-outline-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-surface-container-low after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- Description / Agenda Field -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface" for="prog-desc">
+                  Keterangan &amp; Atur Cara Ringkas
+                </label>
+<span class="font-body-sm text-outline">Pilihan</span>
+</div>
+<textarea class="w-full p-space-md rounded-lg bg-surface-container-low focus:bg-surface-container-lowest text-on-surface font-body-md focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all placeholder:text-outline resize-none" id="prog-desc" placeholder="Sertakan maklumat pakaian rasmi, bahan rujukan yang perlu dibawa, atau pautan dokumen berkaitan..." rows="3"></textarea>
+</div>
+<!-- Google Calendar Auto-Sync Notice inside Form -->
+<div class="p-space-sm bg-surface-container rounded-lg flex items-center gap-space-xs text-primary font-body-sm">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Acara ini akan diterbitkan terus ke Kalendar UPK: <strong>calendar.upk@moe.bn</strong></span>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-2.5 rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md transition-colors" id="btn-reset-form" type="reset">
+                Batal
+              </button>
+<button class="flex items-center gap-space-xs px-space-lg py-2.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-all shadow-md" id="btn-save-event" type="submit">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Simpan &amp; Terbitkan ke Portal &amp; Google Calendar</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom Institutional Audit Notice -->
+<footer class="px-space-lg pb-space-lg">
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-center gap-space-sm text-secondary font-body-sm shadow-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">info</span>
+</div>
+<p class="leading-relaxed">
+<strong>Pemberitahuan Sistem Rasmi:</strong> Acara yang diterbitkan akan disegerakkan terus ke Google Calendar Unit dan dihantar melalui suapan notifikasi portal guru secara automatik. Sebarang pembatalan atau pertukaran waktu akan menjana notifikasi emel segera kepada semua peserta berdaftar.
+      </p>
+</div>
+</footer>
+</div>
+<script>
+  (function() {
+    // 1. Sync button micro-interaction
+    const syncBtn = document.getElementById('btn-sync-now');
+    const syncIcon = document.getElementById('sync-icon');
+    const syncText = document.getElementById('sync-text');
+
+    if (syncBtn && syncIcon && syncText) {
+      syncBtn.addEventListener('click', function() {
+        syncIcon.classList.add('animate-spin');
+        syncText.textContent = 'Menyegerak Kalendar...';
+        
+        setTimeout(() => {
+          syncIcon.classList.remove('animate-spin');
+          syncText.textContent = 'Disegerakkan Baru Sahaja';
+          setTimeout(() => {
+            syncText.textContent = 'Segerak Kalendar Sekarang';
+          }, 3000);
+        }, 1200);
+      });
+    }
+
+    // 2. Scroll to form button
+    const scrollBtn = document.getElementById('btn-new-program-scroll');
+    const formElem = document.getElementById('form-container');
+    if (scrollBtn && formElem) {
+      scrollBtn.addEventListener('click', () => {
+        formElem.scrollIntoView({ behavior: 'smooth' });
+        const titleInput = document.getElementById('prog-title');
+        if (titleInput) {
+          titleInput.focus();
+        }
+      });
+    }
+
+    // 3. Mode Toggle (Physical vs Virtual)
+    const modePhys = document.getElementById('tab-mode-physical');
+    const modeVirt = document.getElementById('tab-mode-virtual');
+    const locationInput = document.getElementById('prog-location');
+
+    if (modePhys && modeVirt && locationInput) {
+      modePhys.addEventListener('click', () => {
+        modePhys.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+        modePhys.classList.remove('text-secondary');
+        modeVirt.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+        modeVirt.classList.add('text-secondary');
+        locationInput.placeholder = 'Nyatakan bilik / dewan (cth: Dewan Serbaguna UPK, JSS)';
+        locationInput.value = '';
+      });
+
+      modeVirt.addEventListener('click', () => {
+        modeVirt.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+        modeVirt.classList.remove('text-secondary');
+        modePhys.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+        modePhys.classList.add('text-secondary');
+        locationInput.placeholder = 'Pautan Google Meet auto-dijana oleh Google API: https://meet.google.com/upk-...';
+        locationInput.value = 'https://meet.google.com/upk-bimbingan-2026';
+      });
+    }
+
+    // 4. Client-side Search and Category Filtering
+    const searchInput = document.getElementById('filter-search');
+    const categorySelect = document.getElementById('filter-category');
+    const articles = document.querySelectorAll('article[data-category]');
+
+    function filterEvents() {
+      const query = (searchInput?.value || '').toLowerCase().trim();
+      const cat = categorySelect?.value || 'Semua';
+
+      let count = 0;
+      articles.forEach(art => {
+        const text = art.textContent.toLowerCase();
+        const artCat = art.getAttribute('data-category');
+        const matchesQuery = !query || text.includes(query);
+        const matchesCat = (cat === 'Semua') || (artCat === cat);
+
+        if (matchesQuery && matchesCat) {
+          art.style.display = '';
+          count++;
+        } else {
+          art.style.display = 'none';
+        }
+      });
+
+      const badge = document.getElementById('active-count-badge');
+      if (badge) {
+        badge.textContent = count + ' Acara Terjadual';
+      }
+    }
+
+    if (searchInput) searchInput.addEventListener('input', filterEvents);
+    if (categorySelect) categorySelect.addEventListener('change', filterEvents);
+
+    // 5. Submit notification alert
+    const saveBtn = document.getElementById('btn-save-event');
+    if (saveBtn) {
+      saveBtn.addEventListener('click', () => {
+        const titleVal = document.getElementById('prog-title')?.value;
+        if (!titleVal) return;
+        saveBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">sync</span><span>Menerbitkan ke Google Cal...</span>';
+        setTimeout(() => {
+          saveBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check_circle</span><span>Berjaya Diterbitkan!</span>';
+          setTimeout(() => {
+            saveBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">send</span><span>Simpan & Terbitkan ke Portal & Google Calendar</span>';
+            document.getElementById('event-admin-form')?.reset();
+          }, 2000);
+        }, 1000);
+      });
+    }
+  })();
+</script></main></div></body></html>

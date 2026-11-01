@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+
+<html lang="ms"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"inverse-surface":"#16324c","surface-tint":"#006492","surface-container":"#e4efff","outline":"#707880","on-secondary-fixed-variant":"#3b4951","surface-bright":"#f8f9ff","surface-container-highest":"#d0e4ff","tertiary-fixed-dim":"#eec14b","tertiary-container":"#947100","error-container":"#ffdad6","on-primary-fixed":"#001e2f","secondary-fixed":"#d6e5ef","background":"#f8f9ff","error":"#ba1a1a","on-secondary-fixed":"#0f1d25","surface-variant":"#d0e4ff","tertiary-fixed":"#ffdf98","on-tertiary-fixed":"#251a00","on-secondary":"#ffffff","inverse-on-surface":"#e9f1ff","inverse-primary":"#8bceff","on-background":"#001d35","on-surface-variant":"#3f484f","surface":"#f8f9ff","on-tertiary-container":"#ffffff","surface-container-low":"#eef4ff","secondary":"#526069","secondary-fixed-dim":"#bac9d3","on-secondary-container":"#56656e","outline-variant":"#bfc7d0","on-tertiary":"#ffffff","on-primary-container":"#ffffff","primary":"#006390","secondary-container":"#d3e2ed","on-primary":"#ffffff","on-surface":"#001d35","primary-fixed":"#c9e6ff","on-error-container":"#93000a","on-tertiary-fixed-variant":"#5a4300","primary-fixed-dim":"#8bceff","on-primary-fixed-variant":"#004b6f","tertiary":"#765900","on-error":"#ffffff","surface-dim":"#c1ddfe","primary-container":"#167db2","surface-container-lowest":"#ffffff","surface-container-high":"#daeaff"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-lg":"1.5rem","gutter-desktop":"1.5rem","space-md":"1rem",margin:"1rem","space-sm":"0.5rem","space-xs":"0.25rem","space-xl":"2rem",gutter:"1rem","margin-desktop":"2rem"},fontFamily:{"headline-xl":["Plus Jakarta Sans"],"body-sm":["Inter"],"label-sm":["Inter"],"title-sm":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-md":["Inter"],"body-md":["Inter"]},fontSize:{"headline-xl":["2rem",{lineHeight:"2.5rem",letterSpacing:"-0.02em",fontWeight:"700"}],"body-sm":["0.75rem",{lineHeight:"1.125rem",fontWeight:"400"}],"label-sm":["0.75rem",{lineHeight:"1rem",letterSpacing:"0.02em",fontWeight:"600"}],"title-sm":["1.125rem",{lineHeight:"1.5rem",fontWeight:"600"}],"headline-xl-mobile":["1.625rem",{lineHeight:"2.125rem",letterSpacing:"-0.015em",fontWeight:"700"}],"body-lg":["1rem",{lineHeight:"1.625rem",fontWeight:"400"}],"headline-lg":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-md":["1.25rem",{lineHeight:"1.75rem",letterSpacing:"-0.005em",fontWeight:"600"}],"label-md":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"0.01em",fontWeight:"600"}],"body-md":["0.875rem",{lineHeight:"1.375rem",fontWeight:"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[250px] bg-inverse-surface text-inverse-on-surface z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.12)]"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center gap-space-sm bg-inverse-surface"><div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary ring-2 ring-primary-fixed-dim"><span class="material-symbols-outlined text-[20px]">verified</span></div><div class="flex flex-col min-w-0"><span class="font-headline-md text-[18px] leading-tight font-bold tracking-tight text-surface-container-lowest truncate">CEU PORTAL</span><span class="font-label-sm text-[11px] leading-tight text-primary-fixed-dim tracking-wide truncate">Admin Command • JSS</span></div></div><div class="px-space-md py-space-sm"><p class="font-label-sm text-surface-container-highest opacity-70 uppercase tracking-wider text-[10px]">Modul Pentadbiran</p></div><nav class="flex flex-col gap-1 px-space-xs" data-active-classes="bg-surface-container-highest/20 text-surface-container-lowest font-label-md border-l-[3px] border-tertiary-fixed-dim pl-[13px]"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-r-lg text-surface-container-highest/90 hover:bg-surface-container-highest/15 hover:text-surface-container-lowest transition-colors font-body-md" data-path="dashboard-analitis" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="truncate">Dashboard &amp; Analitis</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-r-lg text-surface-container-highest/90 hover:bg-surface-container-highest/15 hover:text-surface-container-lowest transition-colors font-body-md" data-path="urus-kalendar-acara" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span class="truncate">Urus Kalendar &amp; Acara</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-r-lg text-surface-container-highest/90 hover:bg-surface-container-highest/15 hover:text-surface-container-lowest transition-colors font-body-md" data-path="urus-memo-dokumen" href="#"><span class="material-symbols-outlined text-[20px]">description</span><span class="truncate">Urus Memo &amp; Dokumen</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-r-lg text-surface-container-highest/90 hover:bg-surface-container-highest/15 hover:text-surface-container-lowest transition-colors font-body-md" data-path="hantar-hebahan-notifikasi" href="#"><span class="material-symbols-outlined text-[20px]">campaign</span><span class="truncate">Hantar Hebahan Notifikasi</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-r-lg text-surface-container-highest/90 hover:bg-surface-container-highest/15 hover:text-surface-container-lowest transition-colors font-body-md" data-path="laporan-kehadiran-rsvp" href="#"><span class="material-symbols-outlined text-[20px]">check_circle</span><span class="truncate">Laporan Kehadiran RSVP</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-r-lg text-surface-container-highest/90 hover:bg-surface-container-highest/15 hover:text-surface-container-lowest transition-colors font-body-md" data-path="direktori-guru-sekolah" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="truncate">Direktori Guru &amp; Sekolah</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-r-lg text-surface-container-highest/90 hover:bg-surface-container-highest/15 hover:text-surface-container-lowest transition-colors font-body-md" data-path="kelulusan-guru-baharu" href="#"><div class="flex items-center gap-space-sm min-w-0"><span class="material-symbols-outlined text-[20px]">how_to_reg</span><span class="truncate">Kelulusan Guru Baharu</span></div><span class="bg-error text-on-error font-label-sm text-[11px] px-2 py-0.5 rounded-full">3</span></a></nav></div><div class="p-space-md bg-inverse-surface/80"><div class="flex items-center justify-between bg-surface-container-highest/10 p-space-sm rounded-xl"><div class="flex items-center gap-space-sm min-w-0"><div class="relative flex-shrink-0"><div class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[20px]">person</span></div><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-tertiary ring-2 ring-inverse-surface"></span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-surface-container-lowest truncate leading-tight">Pegawai Pentadbir UPK</span><span class="font-body-sm text-surface-container-highest/70 truncate leading-tight">admin.upk@moe.bn</span></div></div><a class="p-space-xs text-surface-container-highest/80 hover:text-error-container hover:bg-surface-container-highest/20 rounded-lg transition-colors flex-shrink-0" data-path="log-keluar" href="#" title="Log Keluar"><span class="material-symbols-outlined text-[20px]">logout</span></a></div></div></aside><div class="pl-[250px]"><header class="fixed top-0 left-[250px] right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-sm"><span class="font-label-sm text-secondary">Portal Pentadbiran</span><span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span><span class="font-label-md text-on-surface">Unit Pendidikan Kerjaya</span></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-low text-secondary"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-body-sm text-on-surface-variant">Penyegerakan Google Sheets: Aktif (2m lepas)</span></div><button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary-container text-on-primary font-label-md hover:bg-primary transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">sync</span><span>Segerak Kalendar Sekarang</span></button><button class="relative p-2 rounded-full text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-[10px] flex items-center justify-center font-bold">4</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="p-space-lg max-w-[1400px] w-full mx-auto space-y-space-xl">
+<!-- Header Seksyen -->
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-r from-inverse-surface via-primary to-primary-container p-space-xl text-on-primary shadow-md">
+<div class="absolute -right-10 -bottom-10 w-64 h-64 rounded-full bg-surface-container-lowest/5 pointer-events-none"></div>
+<div class="absolute right-28 top-4 w-32 h-32 rounded-full bg-tertiary-fixed-dim/10 pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="space-y-space-xs max-w-3xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-lowest/15 backdrop-blur-sm text-surface-container-lowest font-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">campaign</span>
+<span>Saluran Hebahan Bersepadu • JSS MoE</span>
+</div>
+<h1 class="font-headline-xl text-surface-container-lowest tracking-tight">Komposer Hebahan &amp; Notifikasi Rasmi</h1>
+<p class="font-body-md text-surface-container-highest/90">
+            Penyebaran makluman berbilang saluran melalui Notifikasi Dalam Aplikasi (In-App) dan E-mel Rasmi Kementerian (Gmail BCC Kelompok 50) dengan pengesahan penerima automatik.
+          </p>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-lowest/10 p-space-md rounded-xl backdrop-blur-md self-start md:self-auto">
+<div class="p-2.5 rounded-lg bg-surface-container-lowest/20 text-surface-container-lowest">
+<span class="material-symbols-outlined text-[24px]">mark_email_read</span>
+</div>
+<div>
+<div class="font-label-sm text-surface-container-highest/80">Baki Kuota Harian</div>
+<div class="font-headline-md text-surface-container-lowest">1,352 / 1,500 <span class="font-body-sm font-normal text-surface-container-highest/70">emel</span></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Grid: Composer Form (Left 7 Cols) & Mobile Live Preview (Right 5 Cols) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Borang Penggubah Notifikasi (7 Cols) -->
+<div class="lg:col-span-7 space-y-space-lg">
+<!-- Langkah 1: Sasaran Penerima -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 h-7 rounded-full bg-primary-container text-on-primary font-headline-md text-[14px] flex items-center justify-center">1</span>
+<h2 class="font-title-sm text-on-surface">Sasaran Penerima (Target Audience Selection)</h2>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-primary font-label-sm" id="badge-total-recipients">148 Penerima</span>
+</div>
+<div class="space-y-space-sm">
+<!-- Kad Radio 1: Semua Guru -->
+<label class="group relative flex items-start gap-space-md p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer" onclick="updateAudience('all', 148, 'Semua Guru Bimbingan Kerjaya (148 Penerima - 42 Sekolah)')">
+<input checked="" class="mt-1 text-primary focus:ring-0 w-4 h-4 cursor-pointer" name="target_audience" type="radio" value="all"/>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2">
+<span class="font-label-md text-on-surface">Semua Guru Bimbingan Kerjaya</span>
+<span class="font-label-sm text-primary font-bold">148 Penerima</span>
+</div>
+<p class="font-body-sm text-secondary">Meliputi kesemua 42 buah sekolah menengah, maktab, dan pusat tingkatan enam di seluruh negara.</p>
+</div>
+</label>
+<!-- Kad Radio 2: Mengikut Daerah -->
+<label class="group relative flex flex-col p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer" onclick="updateAudience('district', 86, 'Guru Mengikut Daerah Terpilih')">
+<div class="flex items-start gap-space-md w-full">
+<input class="mt-1 text-primary focus:ring-0 w-4 h-4 cursor-pointer" name="target_audience" type="radio" value="district"/>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2">
+<span class="font-label-md text-on-surface">Mengikut Daerah Tertentu</span>
+<span class="font-label-sm text-secondary">Pilihan Geografi</span>
+</div>
+<p class="font-body-sm text-secondary">Tapis sekolah berdasarkan zon pentadbiran kluster daerah.</p>
+</div>
+</div>
+<!-- Sub Checklist Daerah -->
+<div class="mt-3 ml-7 pt-3 flex flex-wrap gap-2" id="district-chips">
+<label class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface text-body-sm font-label-sm shadow-sm cursor-pointer">
+<input checked="" class="rounded text-primary focus:ring-0" type="checkbox"/>
+<span>Brunei-Muara (86)</span>
+</label>
+<label class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface text-body-sm font-label-sm shadow-sm cursor-pointer">
+<input class="rounded text-primary focus:ring-0" type="checkbox"/>
+<span>Tutong (24)</span>
+</label>
+<label class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface text-body-sm font-label-sm shadow-sm cursor-pointer">
+<input class="rounded text-primary focus:ring-0" type="checkbox"/>
+<span>Belait (26)</span>
+</label>
+<label class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface text-body-sm font-label-sm shadow-sm cursor-pointer">
+<input class="rounded text-primary focus:ring-0" type="checkbox"/>
+<span>Temburong (12)</span>
+</label>
+</div>
+</label>
+<!-- Kad Radio 3: Belum RSVP -->
+<label class="group relative flex flex-col p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer" onclick="updateAudience('rsvp', 31, 'Guru Belum Mengisi RSVP (Bengkel Siri 1)')">
+<div class="flex items-start gap-space-md w-full">
+<input class="mt-1 text-primary focus:ring-0 w-4 h-4 cursor-pointer" name="target_audience" type="radio" value="rsvp"/>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2">
+<span class="font-label-md text-on-surface">Guru Belum Mengisi RSVP Acara Tertentu</span>
+<span class="font-label-sm text-tertiary font-bold">Sasaran Pintar (Smart Follow-up)</span>
+</div>
+<p class="font-body-sm text-secondary">Hantar peringatan khusus kepada pegawai yang masih dalam status 'Menunggu Respons'.</p>
+</div>
+</div>
+<div class="mt-3 ml-7 pt-2">
+<select class="w-full bg-surface-container-lowest rounded-lg px-3 py-2 text-body-sm text-on-surface focus:outline-none shadow-sm">
+<option>Bengkel Kerjaya Siri 1/2026 - Dewan Persidangan MoE (31 Guru Belum RSVP)</option>
+<option>Mesyuarat Penyelarasan Kaunselor Bil.2 - Atas Talian (14 Guru Belum RSVP)</option>
+</select>
+</div>
+</label>
+</div>
+</div>
+<!-- Langkah 2: Saluran Hebahan & Tahap Keutamaan -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 h-7 rounded-full bg-primary-container text-on-primary font-headline-md text-[14px] flex items-center justify-center">2</span>
+<h2 class="font-title-sm text-on-surface">Saluran Hebahan &amp; Tahap Keutamaan</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Saluran Hebahan -->
+<div class="space-y-space-xs">
+<span class="font-label-sm text-secondary uppercase tracking-wider">Saluran Penyampaian</span>
+<div class="space-y-2">
+<label class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low cursor-pointer">
+<input checked="" class="mt-1 rounded text-primary focus:ring-0" id="channel-inapp" onchange="toggleChannelPreview()" type="checkbox"/>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5 text-on-surface font-label-md">
+<span class="material-symbols-outlined text-[18px] text-primary">notifications_active</span>
+<span>Notifikasi Dalam Aplikasi</span>
+</div>
+<span class="text-body-sm text-secondary">Pop-up loceng &amp; banner utama portal</span>
+</div>
+</label>
+<label class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low cursor-pointer">
+<input checked="" class="mt-1 rounded text-primary focus:ring-0" id="channel-email" onchange="toggleChannelPreview()" type="checkbox"/>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5 text-on-surface font-label-md">
+<span class="material-symbols-outlined text-[18px] text-primary">forward_to_inbox</span>
+<span>E-mel Rasmi Kementerian</span>
+</div>
+<span class="text-body-sm text-secondary">Domain @moe.bn via GmailApp Auto-BCC</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Tahap Keutamaan -->
+<div class="space-y-space-xs">
+<span class="font-label-sm text-secondary uppercase tracking-wider">Tahap Keutamaan Notifikasi</span>
+<div class="grid grid-cols-2 gap-2 h-[calc(100%-24px)]">
+<button class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container text-primary ring-2 ring-primary transition-all" id="btn-priority-normal" onclick="setPriority('normal')" type="button">
+<span class="material-symbols-outlined text-[24px]">info</span>
+<span class="font-label-md mt-1">Biasa / Umum</span>
+<span class="font-body-sm text-[11px] opacity-80">Banner Biru Rasmi</span>
+</button>
+<button class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-low text-secondary transition-all" id="btn-priority-urgent" onclick="setPriority('urgent')" type="button">
+<span class="material-symbols-outlined text-[24px] text-error">notification_important</span>
+<span class="font-label-md mt-1 text-on-surface">SEGERA / TINDAKAN</span>
+<span class="font-body-sm text-[11px] text-secondary">Banner Merah Pantas</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Langkah 3: Kandungan Mesej Hebahan -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 h-7 rounded-full bg-primary-container text-on-primary font-headline-md text-[14px] flex items-center justify-center">3</span>
+<h2 class="font-title-sm text-on-surface">Kandungan Mesej Hebahan</h2>
+</div>
+<span class="font-body-sm text-secondary">Draf disimpan automatik</span>
+</div>
+<div class="space-y-space-md">
+<!-- Tajuk -->
+<div class="space-y-1">
+<label class="font-label-sm text-on-surface">Subjek / Tajuk Hebahan <span class="text-error">*</span></label>
+<input class="w-full bg-surface-container-low rounded-lg px-space-md py-2.5 text-on-surface font-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary-fixed-dim transition-all shadow-sm" id="input-subject" oninput="updateLivePreview()" type="text" value="Peringatan Tarikh Tutup RSVP: Bengkel Kerjaya Siri 1/2026"/>
+</div>
+<!-- Rujukan / Lampiran Pantas -->
+<div class="space-y-1">
+<label class="font-label-sm text-on-surface">Pautan Rujukan / Lampiran Pantas</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-[20px] text-secondary">attachment</span>
+<select class="w-full pl-10 pr-4 py-2.5 bg-surface-container-low rounded-lg text-on-surface font-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary-fixed-dim transition-all shadow-sm" id="select-attachment" onchange="updateLivePreview()">
+<option value="none">-- Tiada Rujukan Tambahan --</option>
+<option selected="" value="event">[Acara] Bengkel Kerjaya Siri 1/2026 (28 Feb 2026)</option>
+<option value="memo">[Memo] Surat Pekeliling JSS/UPK/2026/04 - Garis Panduan Kaunseling</option>
+<option value="form">[Borang] Borang Pengesahan Kehadiran Pengiring Pelajar (Google Form)</option>
+</select>
+</div>
+</div>
+<!-- Rich Text Editor Container -->
+<div class="space-y-1">
+<label class="font-label-sm text-on-surface">Kandungan Mesej Rasmi <span class="text-error">*</span></label>
+<!-- Toolbar -->
+<div class="flex flex-wrap items-center gap-1 p-2 bg-surface-container rounded-t-lg">
+<button class="p-1.5 rounded hover:bg-surface-container-highest text-on-surface-variant transition-colors" onclick="formatDoc('bold')" title="Bold" type="button">
+<span class="material-symbols-outlined text-[18px]">format_bold</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container-highest text-on-surface-variant transition-colors" onclick="formatDoc('italic')" title="Italic" type="button">
+<span class="material-symbols-outlined text-[18px]">format_italic</span>
+</button>
+<button class="px-2 py-1 rounded bg-surface-container-lowest text-primary text-body-sm font-label-sm flex items-center gap-1 shadow-sm" onclick="insertTemplate('agenda')" type="button">
+<span class="material-symbols-outlined text-[16px]">list</span>
+<span>+ Butiran Agenda</span>
+</button>
+<button class="px-2 py-1 rounded bg-surface-container-lowest text-error text-body-sm font-label-sm flex items-center gap-1 shadow-sm" onclick="insertTemplate('deadline')" type="button">
+<span class="material-symbols-outlined text-[16px]">alarm</span>
+<span>+ Peringatan Tarikh Akhir</span>
+</button>
+<button class="px-2 py-1 rounded bg-surface-container-lowest text-secondary text-body-sm font-label-sm flex items-center gap-1 shadow-sm" onclick="insertTemplate('location')" type="button">
+<span class="material-symbols-outlined text-[16px]">pin_drop</span>
+<span>+ Lokasi &amp; Masa</span>
+</button>
+</div>
+<!-- Textarea -->
+<textarea class="w-full bg-surface-container-low rounded-b-lg p-space-md text-on-surface font-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary-fixed-dim transition-all shadow-sm leading-relaxed" id="input-body" oninput="updateLivePreview()" rows="7">Guru-guru Bimbingan Kerjaya yang dihormati,
+
+Sukacita diingatkan bahawa tarikh tutup pengesyoran dan pengesahan kehadiran (RSVP) bagi Bengkel Kerjaya Siri 1/2026 akan berakhir pada hari Khamis, 26 Februari 2026 jam 4:30 petang.
+
+Sila lengkapkan maklumat pengesahan anda atau kemukakan butiran guru pengganti sekiranya anda bertugas di luar sekolah melalui pautan acara di dalam portal ini. Kerjasama tuan/puan didahului dengan ucapan terima kasih.
+
+Unit Pendidikan Kerjaya (UPK),
+Jabatan Sekolah-Sekolah.</textarea>
+</div>
+</div>
+</div>
+<!-- Bahagian Pengesahan & Penghantaran -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<!-- Amaran Kuota GAS -->
+<div class="flex items-start gap-space-md p-space-md rounded-xl bg-surface-container-high/60">
+<span class="material-symbols-outlined text-primary text-[24px] mt-0.5">verified_user</span>
+<div class="space-y-1">
+<span class="font-label-md text-on-surface">Pematuhan Kuota Google Apps Script (Auto-Batching)</span>
+<p class="font-body-sm text-secondary">
+                Mesej e-mel akan dihantar secara automatik dalam <strong class="text-on-surface font-bold">3 kelompok BCC</strong> (50 penerima per kelompok) untuk mematuhi had penghantaran selamat pelayan Kementerian Pendidikan tanpa ditandai spam.
+              </p>
+</div>
+</div>
+<!-- Tindakan Butang -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-xs">
+<button class="w-full sm:w-auto px-space-lg py-2.5 rounded-lg bg-surface-container text-secondary hover:bg-surface-container-highest hover:text-on-surface font-label-md transition-colors flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">drafts</span>
+<span>Batal / Simpan Deraf</span>
+</button>
+<button class="w-full sm:w-auto px-space-xl py-3 rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-md shadow-md transition-all flex items-center justify-center gap-space-sm group" onclick="sendBroadcast()" type="button">
+<span class="material-symbols-outlined text-[20px] group-hover:translate-x-0.5 transition-transform">send</span>
+<span>Siar Notifikasi &amp; Hantar Emel Sekarang</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest/20 text-surface-container-lowest text-[12px] font-bold" id="btn-counter">148 Sasaran</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Panel Pratonton Langsung (Right 5 Cols - Sticky Preview) -->
+<div class="lg:col-span-5 sticky top-20 space-y-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">smartphone</span>
+<h3 class="font-title-sm text-on-surface">Pratonton Langsung Guru (In-App)</h3>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-secondary text-[11px]">Paparan Masa Nyata</span>
+</div>
+</div>
+<!-- Smartphone Shell Frame Mockup -->
+<div class="mx-auto w-full max-w-[340px] bg-inverse-surface p-3 rounded-[36px] shadow-xl">
+<!-- Screen Display -->
+<div class="bg-background rounded-[28px] overflow-hidden flex flex-col min-h-[540px]">
+<!-- Mobile App Status Bar -->
+<div class="bg-inverse-surface text-inverse-on-surface px-6 pt-3 pb-2 flex items-center justify-between font-label-sm text-[11px]">
+<span>09:41</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">signal_cellular_4_bar</span>
+<span class="material-symbols-outlined text-[14px]">wifi</span>
+<span class="material-symbols-outlined text-[14px]">battery_full</span>
+</div>
+</div>
+<!-- Mobile Top App Bar -->
+<div class="bg-surface-container-lowest px-4 py-3 shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[15px]">school</span>
+</div>
+<div>
+<div class="font-label-md text-[13px] leading-tight text-on-surface">Portal Guru Kerjaya</div>
+<div class="font-body-sm text-[10px] text-secondary">Cikgu Hjh Zaleha (SMSSR)</div>
+</div>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined text-primary text-[22px]">notifications</span>
+<span class="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-error animate-ping"></span>
+<span class="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-error"></span>
+</div>
+</div>
+<!-- Push Notification Toast Pop-up inside Mobile View -->
+<div class="p-3">
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-md space-y-2" id="preview-toast-card">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="p-1 rounded-md bg-primary-container text-on-primary" id="preview-toast-icon-bg">
+<span class="material-symbols-outlined text-[14px]">campaign</span>
+</span>
+<span class="font-label-sm text-[11px] text-primary" id="preview-toast-sender">UPK Pentadbiran</span>
+</div>
+<span class="font-body-sm text-[10px] text-secondary">Baru Sahaja</span>
+</div>
+<div class="font-label-md text-[12px] leading-tight text-on-surface font-bold" id="preview-toast-title">
+                    Peringatan Tarikh Tutup RSVP: Bengkel Kerjaya Siri 1/2026
+                  </div>
+</div>
+</div>
+<!-- In-App Feed Notification Card -->
+<div class="p-3 pt-0 flex-1 flex flex-col justify-between">
+<div class="space-y-2">
+<!-- Banner Status Tag -->
+<div class="flex items-center justify-between px-3 py-1.5 rounded-lg bg-surface-container text-primary font-label-sm text-[11px]" id="preview-priority-badge">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]" id="preview-badge-icon">info</span>
+<span id="preview-priority-label">Hebahan Pentadbiran Biasa</span>
+</span>
+<span class="text-[10px]">Untuk Semua Sekolah</span>
+</div>
+<!-- Notification Content Card -->
+<div class="bg-surface-container-lowest rounded-xl p-3 shadow-sm space-y-2">
+<h4 class="font-title-sm text-[13px] leading-snug text-on-surface" id="preview-heading">
+                      Peringatan Tarikh Tutup RSVP: Bengkel Kerjaya Siri 1/2026
+                    </h4>
+<p class="font-body-sm text-[11px] leading-relaxed text-secondary whitespace-pre-line" id="preview-content">
+                      Guru-guru Bimbingan Kerjaya yang dihormati,
+
+                      Sukacita diingatkan bahawa tarikh tutup pengesyoran dan pengesahan kehadiran (RSVP)...
+                    </p>
+<!-- Attached Quick Link in Mobile Preview -->
+<div class="p-2 rounded-lg bg-surface-container-low flex items-center justify-between" id="preview-attachment-box">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-[16px] text-primary">event</span>
+<span class="font-label-sm text-[11px] text-on-surface truncate" id="preview-attachment-name">Bengkel Kerjaya Siri 1/2026</span>
+</div>
+<span class="font-label-sm text-[10px] text-primary underline">Lihat Acara</span>
+</div>
+</div>
+</div>
+<!-- Teacher Action Buttons in Mobile View -->
+<div class="pt-3 pb-1">
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2 rounded-lg bg-surface-container-low text-secondary text-[11px] font-label-md">Abaikan</button>
+<button class="py-2 rounded-lg bg-primary-container text-on-primary text-[11px] font-label-md shadow-sm">Buka &amp; RSVP</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Channel Active Summary -->
+<div class="p-space-md rounded-xl bg-surface-container-low text-on-surface space-y-2 text-body-sm">
+<div class="flex items-center justify-between font-label-sm">
+<span class="text-secondary">Pratonton Pengedaran:</span>
+<span class="text-primary font-bold">Automatik</span>
+</div>
+<div class="flex items-center gap-2 text-secondary text-[12px]" id="indicator-inapp">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span>Banner Pop-up &amp; Feed App Guru</span>
+</div>
+<div class="flex items-center gap-2 text-secondary text-[12px]" id="indicator-email">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span>Format Memo Rasmi PDF Template (Email)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Sejarah Hebahan Terdahulu -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-title-sm text-on-surface">Sejarah Hebahan &amp; Rekod Notifikasi Terdahulu</h2>
+<p class="font-body-sm text-secondary">Log penghantaran berpusat, status kelompok BCC Google Apps Script, dan kadar capaian bacaan guru.</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2 text-[18px] text-secondary">search</span>
+<input class="pl-9 pr-3 py-1.5 bg-surface-container-low rounded-lg text-body-sm text-on-surface focus:outline-none" placeholder="Cari rekod tajuk..." type="text"/>
+</div>
+<button class="p-2 rounded-lg bg-surface-container-low text-secondary hover:text-on-surface transition-colors" title="Muat Semula">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+</button>
+</div>
+</div>
+<!-- History Table Container -->
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low text-secondary font-label-sm text-[12px] uppercase tracking-wider">
+<th class="py-3 px-4 rounded-l-lg">Tajuk Hebahan &amp; Sasaran</th>
+<th class="py-3 px-4">Saluran</th>
+<th class="py-3 px-4">Tarikh &amp; Masa</th>
+<th class="py-3 px-4">Status GAS BCC</th>
+<th class="py-3 px-4">Kadar Bacaan</th>
+<th class="py-3 px-4 rounded-r-lg text-right">Tindakan</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low text-body-sm">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3.5 px-4">
+<div class="font-label-md text-on-surface font-semibold">Arahan Kemas Kini Profil Guru Kerjaya 2026</div>
+<div class="font-body-sm text-secondary flex items-center gap-1.5 mt-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>Semua 42 Sekolah (148 Guru)</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary" title="In-App">notifications</span>
+<span class="material-symbols-outlined text-[16px] text-primary" title="E-mel">mail</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-on-surface">
+<div>20 Feb 2026</div>
+<div class="text-[11px] text-secondary">08:30 AM</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-primary font-label-sm text-[11px]">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>Berjaya (3 Kelompok)</span>
+</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<div class="w-20 bg-surface-container-low h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 92%"></div>
+</div>
+<span class="font-label-sm text-on-surface">92%</span>
+</div>
+<div class="text-[10px] text-secondary">136/148 Dibuka</div>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="p-1.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors" title="Lihat Laporan Penuh">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-on-surface font-semibold">TUNDA: Taklimat Biasiswa Luar Negara Siri 2</span>
+<span class="px-2 py-0.5 rounded-full bg-error text-on-error font-label-sm text-[10px] font-bold">SEGERA</span>
+</div>
+<div class="font-body-sm text-secondary flex items-center gap-1.5 mt-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Kluster Brunei-Muara &amp; Tutong (110 Guru)</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary" title="In-App">notifications</span>
+<span class="material-symbols-outlined text-[16px] text-primary" title="E-mel">mail</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-on-surface">
+<div>15 Feb 2026</div>
+<div class="text-[11px] text-secondary">02:15 PM</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-primary font-label-sm text-[11px]">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>Berjaya (3 Kelompok)</span>
+</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<div class="w-20 bg-surface-container-low h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 98%"></div>
+</div>
+<span class="font-label-sm text-on-surface">98%</span>
+</div>
+<div class="text-[10px] text-secondary">108/110 Dibuka</div>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="p-1.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors" title="Lihat Laporan Penuh">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3.5 px-4">
+<div class="font-label-md text-on-surface font-semibold">Penyerahan Modul Pendidikan Kerjaya Rendah</div>
+<div class="font-body-sm text-secondary flex items-center gap-1.5 mt-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Peringatan Tindakan RSVP (28 Guru)</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary" title="In-App">notifications</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-on-surface">
+<div>08 Feb 2026</div>
+<div class="text-[11px] text-secondary">10:00 AM</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-primary font-label-sm text-[11px]">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>Selesai (In-App Sahaja)</span>
+</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<div class="w-20 bg-surface-container-low h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 85%"></div>
+</div>
+<span class="font-label-sm text-on-surface">85%</span>
+</div>
+<div class="text-[10px] text-secondary">24/28 Dibuka</div>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="p-1.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors" title="Lihat Laporan Penuh">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<script>
+  let currentPriority = 'normal';
+  let audienceCount = 148;
+
+  function updateAudience(type, count, label) {
+    audienceCount = count;
+    const badge = document.getElementById('badge-total-recipients');
+    const counter = document.getElementById('btn-counter');
+    if (badge) badge.innerText = `${count} Penerima`;
+    if (counter) counter.innerText = `${count} Sasaran`;
+  }
+
+  function setPriority(level) {
+    currentPriority = level;
+    const btnNormal = document.getElementById('btn-priority-normal');
+    const btnUrgent = document.getElementById('btn-priority-urgent');
+    const previewBadge = document.getElementById('preview-priority-badge');
+    const previewLabel = document.getElementById('preview-priority-label');
+    const previewIcon = document.getElementById('preview-badge-icon');
+    const toastCard = document.getElementById('preview-toast-card');
+    const toastIconBg = document.getElementById('preview-toast-icon-bg');
+
+    if (level === 'urgent') {
+      // Buttons state
+      btnNormal.className = 'flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-low text-secondary transition-all';
+      btnUrgent.className = 'flex flex-col items-center justify-center p-3 rounded-xl bg-error text-on-error ring-2 ring-error transition-all';
+      
+      // Mobile Preview update
+      previewBadge.className = 'flex items-center justify-between px-3 py-1.5 rounded-lg bg-error text-on-error font-label-sm text-[11px] animate-pulse';
+      previewLabel.innerText = 'SEGERA / TINDAKAN DIPERLUKAN';
+      previewIcon.innerText = 'warning';
+      
+      toastCard.classList.add('border-l-4', 'border-error');
+      toastIconBg.className = 'p-1 rounded-md bg-error text-on-error';
+    } else {
+      // Normal state
+      btnNormal.className = 'flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container text-primary ring-2 ring-primary transition-all';
+      btnUrgent.className = 'flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-low text-secondary transition-all';
+      
+      // Mobile preview update
+      previewBadge.className = 'flex items-center justify-between px-3 py-1.5 rounded-lg bg-surface-container text-primary font-label-sm text-[11px]';
+      previewLabel.innerText = 'Hebahan Pentadbiran Biasa';
+      previewIcon.innerText = 'info';
+      
+      toastCard.classList.remove('border-l-4', 'border-error');
+      toastIconBg.className = 'p-1 rounded-md bg-primary-container text-on-primary';
+    }
+  }
+
+  function updateLivePreview() {
+    const subject = document.getElementById('input-subject').value || 'Tajuk Notifikasi Kosong';
+    const body = document.getElementById('input-body').value || 'Tiada kandungan mesej.';
+    const attachmentSelect = document.getElementById('select-attachment');
+    const selectedAttachmentText = attachmentSelect.options[attachmentSelect.selectedIndex].text;
+    const attachmentBox = document.getElementById('preview-attachment-box');
+
+    document.getElementById('preview-toast-title').innerText = subject;
+    document.getElementById('preview-heading').innerText = subject;
+    document.getElementById('preview-content').innerText = body;
+
+    if (attachmentSelect.value === 'none') {
+      attachmentBox.classList.add('hidden');
+    } else {
+      attachmentBox.classList.remove('hidden');
+      document.getElementById('preview-attachment-name').innerText = selectedAttachmentText;
+    }
+  }
+
+  function toggleChannelPreview() {
+    const inapp = document.getElementById('channel-inapp').checked;
+    const email = document.getElementById('channel-email').checked;
+    const indInapp = document.getElementById('indicator-inapp');
+    const indEmail = document.getElementById('indicator-email');
+
+    if (inapp) {
+      indInapp.classList.remove('opacity-40');
+    } else {
+      indInapp.classList.add('opacity-40');
+    }
+
+    if (email) {
+      indEmail.classList.remove('opacity-40');
+    } else {
+      indEmail.classList.add('opacity-40');
+    }
+  }
+
+  function formatDoc(command) {
+    const textarea = document.getElementById('input-body');
+    const start = textarea.selectionStart;
+    const end = textarea.selectionEnd;
+    const selText = textarea.value.substring(start, end);
+    let wrap = '**';
+    if (command === 'italic') wrap = '_';
+
+    textarea.value = textarea.value.substring(0, start) + wrap + selText + wrap + textarea.value.substring(end);
+    updateLivePreview();
+  }
+
+  function insertTemplate(type) {
+    const textarea = document.getElementById('input-body');
+    let templateText = '';
+    if (type === 'agenda') {
+      templateText = '\n\nAgenda Ringkas:\n1. Pendaftaran Pegawai & Kaunselor (8:00 AM)\n2. Taklimat Hala Tuju Kerjaya TVET & MoE (8:45 AM)\n3. Sesi Bengkel Interaktif Guru (10:30 AM)';
+    } else if (type === 'deadline') {
+      templateText = '\n\n[TARIKH AKHIR PENGESAHAN: Sila maklumkan sebelum Khamis, 26 Februari 2026 jam 4:30 PM]';
+    } else if (type === 'location') {
+      templateText = '\n\nLokasi: Dewan Persidangan Utama, Jabatan Sekolah-Sekolah\nMasa: 8:00 Pagi - 4:30 Petang';
+    }
+    textarea.value += templateText;
+    updateLivePreview();
+  }
+
+  function sendBroadcast() {
+    const subject = document.getElementById('input-subject').value;
+    if (!subject) {
+      alert('Sila isi Subjek / Tajuk Hebahan terlebih dahulu.');
+      return;
+    }
+    
+    const confirmMsg = `Adakah anda pasti untuk menyiarkan hebahan ini kepada ${audienceCount} penerima melalui Google Apps Script Auto-Batch BCC?`;
+    if (confirm(confirmMsg)) {
+      alert(`Hebahan berjaya dihantar ke barisan giliran! (${audienceCount} penerima dalam 3 kelompok BCC).`);
+    }
+  }
+
+  // Initial preview initialization
+  document.addEventListener('DOMContentLoaded', () => {
+    updateLivePreview();
+  });
+</script></main></div></body></html>

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+
+<html lang="ms"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"inverse-surface":"#16324c","surface-tint":"#006492","surface-container":"#e4efff","outline":"#707880","on-secondary-fixed-variant":"#3b4951","surface-bright":"#f8f9ff","surface-container-highest":"#d0e4ff","tertiary-fixed-dim":"#eec14b","tertiary-container":"#947100","error-container":"#ffdad6","on-primary-fixed":"#001e2f","secondary-fixed":"#d6e5ef","background":"#f8f9ff","error":"#ba1a1a","on-secondary-fixed":"#0f1d25","surface-variant":"#d0e4ff","tertiary-fixed":"#ffdf98","on-tertiary-fixed":"#251a00","on-secondary":"#ffffff","inverse-on-surface":"#e9f1ff","inverse-primary":"#8bceff","on-background":"#001d35","on-surface-variant":"#3f484f","surface":"#f8f9ff","on-tertiary-container":"#ffffff","surface-container-low":"#eef4ff","secondary":"#526069","secondary-fixed-dim":"#bac9d3","on-secondary-container":"#56656e","outline-variant":"#bfc7d0","on-tertiary":"#ffffff","on-primary-container":"#ffffff","primary":"#006390","secondary-container":"#d3e2ed","on-primary":"#ffffff","on-surface":"#001d35","primary-fixed":"#c9e6ff","on-error-container":"#93000a","on-tertiary-fixed-variant":"#5a4300","primary-fixed-dim":"#8bceff","on-primary-fixed-variant":"#004b6f","tertiary":"#765900","on-error":"#ffffff","surface-dim":"#c1ddfe","primary-container":"#167db2","surface-container-lowest":"#ffffff","surface-container-high":"#daeaff"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-lg":"1.5rem","gutter-desktop":"1.5rem","space-md":"1rem",margin:"1rem","space-sm":"0.5rem","space-xs":"0.25rem","space-xl":"2rem",gutter:"1rem","margin-desktop":"2rem"},fontFamily:{"headline-xl":["Plus Jakarta Sans"],"body-sm":["Inter"],"label-sm":["Inter"],"title-sm":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-md":["Inter"],"body-md":["Inter"]},fontSize:{"headline-xl":["2rem",{lineHeight:"2.5rem",letterSpacing:"-0.02em",fontWeight:"700"}],"body-sm":["0.75rem",{lineHeight:"1.125rem",fontWeight:"400"}],"label-sm":["0.75rem",{lineHeight:"1rem",letterSpacing:"0.02em",fontWeight:"600"}],"title-sm":["1.125rem",{lineHeight:"1.5rem",fontWeight:"600"}],"headline-xl-mobile":["1.625rem",{lineHeight:"2.125rem",letterSpacing:"-0.015em",fontWeight:"700"}],"body-lg":["1rem",{lineHeight:"1.625rem",fontWeight:"400"}],"headline-lg":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-md":["1.25rem",{lineHeight:"1.75rem",letterSpacing:"-0.005em",fontWeight:"600"}],"label-md":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"0.01em",fontWeight:"600"}],"body-md":["0.875rem",{lineHeight:"1.375rem",fontWeight:"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[250px] bg-inverse-surface text-inverse-on-surface z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.12)]"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center gap-space-sm bg-inverse-surface"><div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary ring-2 ring-primary-fixed-dim"><span class="material-symbols-outlined text-[20px]">verified</span></div><div class="flex flex-col min-w-0"><span class="font-headline-md text-[18px] leading-tight font-bold tracking-tight text-surface-container-lowest truncate">CEU PORTAL</span><span class="font-label-sm text-[11px] leading-tight text-primary-fixed-dim tracking-wide truncate">Admin Command • JSS</span></div></div><div class="px-space-md py-space-sm"><p class="font-label-sm text-surface-container-highest opacity-70 uppercase tracking-wider text-[10px]">Modul Pentadbiran</p></div><nav class="flex flex-col gap-1 px-space-xs" data-active-classes="bg-surface-container-highest/20 text-surface-container-lowest font-label-md border-l-[3px] border-tertiary-fixed-dim pl-[13px]"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-r-lg text-surface-container-highest/90 hover:bg-surface-container-highest/15 hover:text-surface-container-lowest transition-colors font-body-md" data-path="dashboard-analitis" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="truncate">Dashboard &amp; Analitis</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-r-lg text-surface-container-highest/90 hover:bg-surface-container-highest/15 hover:text-surface-container-lowest transition-colors font-body-md" data-path="urus-kalendar-acara" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span class="truncate">Urus Kalendar &amp; Acara</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-r-lg text-surface-container-highest/90 hover:bg-surface-container-highest/15 hover:text-surface-container-lowest transition-colors font-body-md" data-path="urus-memo-dokumen" href="#"><span class="material-symbols-outlined text-[20px]">description</span><span class="truncate">Urus Memo &amp; Dokumen</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-r-lg text-surface-container-highest/90 hover:bg-surface-container-highest/15 hover:text-surface-container-lowest transition-colors font-body-md" data-path="hantar-hebahan-notifikasi" href="#"><span class="material-symbols-outlined text-[20px]">campaign</span><span class="truncate">Hantar Hebahan Notifikasi</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-r-lg text-surface-container-highest/90 hover:bg-surface-container-highest/15 hover:text-surface-container-lowest transition-colors font-body-md" data-path="laporan-kehadiran-rsvp" href="#"><span class="material-symbols-outlined text-[20px]">check_circle</span><span class="truncate">Laporan Kehadiran RSVP</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-r-lg text-surface-container-highest/90 hover:bg-surface-container-highest/15 hover:text-surface-container-lowest transition-colors font-body-md" data-path="direktori-guru-sekolah" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="truncate">Direktori Guru &amp; Sekolah</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-r-lg text-surface-container-highest/90 hover:bg-surface-container-highest/15 hover:text-surface-container-lowest transition-colors font-body-md" data-path="kelulusan-guru-baharu" href="#"><div class="flex items-center gap-space-sm min-w-0"><span class="material-symbols-outlined text-[20px]">how_to_reg</span><span class="truncate">Kelulusan Guru Baharu</span></div><span class="bg-error text-on-error font-label-sm text-[11px] px-2 py-0.5 rounded-full">3</span></a></nav></div><div class="p-space-md bg-inverse-surface/80"><div class="flex items-center justify-between bg-surface-container-highest/10 p-space-sm rounded-xl"><div class="flex items-center gap-space-sm min-w-0"><div class="relative flex-shrink-0"><div class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[20px]">person</span></div><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-tertiary ring-2 ring-inverse-surface"></span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-surface-container-lowest truncate leading-tight">Pegawai Pentadbir UPK</span><span class="font-body-sm text-surface-container-highest/70 truncate leading-tight">admin.upk@moe.bn</span></div></div><a class="p-space-xs text-surface-container-highest/80 hover:text-error-container hover:bg-surface-container-highest/20 rounded-lg transition-colors flex-shrink-0" data-path="log-keluar" href="#" title="Log Keluar"><span class="material-symbols-outlined text-[20px]">logout</span></a></div></div></aside><div class="pl-[250px]"><header class="fixed top-0 left-[250px] right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-sm"><span class="font-label-sm text-secondary">Portal Pentadbiran</span><span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span><span class="font-label-md text-on-surface">Unit Pendidikan Kerjaya</span></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-low text-secondary"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-body-sm text-on-surface-variant">Penyegerakan Google Sheets: Aktif (2m lepas)</span></div><button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary-container text-on-primary font-label-md hover:bg-primary transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">sync</span><span>Segerak Kalendar Sekarang</span></button><button class="relative p-2 rounded-full text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-[10px] flex items-center justify-center font-bold">4</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Ambient Highlight -->
+<div class="relative w-full px-space-md lg:px-space-xl py-space-lg flex flex-col gap-space-lg overflow-hidden">
+<div class="absolute -top-32 -right-20 w-96 h-96 rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none"></div>
+<div class="absolute top-48 left-10 w-72 h-72 rounded-full bg-surface-container-high/40 blur-2xl pointer-events-none"></div>
+<!-- Header Seksyen -->
+<div class="relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+            Modul Kawalan RBAC &amp; Direktori
+          </span>
+<span class="font-label-sm text-secondary tracking-widest uppercase">ID: SEC-DIR-2025</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+          Pengurusan Akses Guru &amp; Direktori Sekolah
+        </h1>
+<p class="font-body-md text-text-body-md text-on-surface-variant">
+          Pusat kelulusan akaun guru kerjaya baharu, kawalan hak capaian OTP, dan direktori 42 buah sekolah kebangsaan di bawah naungan Jabatan Sekolah-Sekolah.
+        </p>
+</div>
+<!-- Quick Metrics Strip -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest p-2 rounded-xl shadow-sm">
+<div class="flex items-center gap-3 px-space-md py-space-xs rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-[28px]">verified_user</span>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md leading-none text-on-surface">148</span>
+<span class="font-label-sm text-label-sm text-secondary">Guru Aktif</span>
+</div>
+</div>
+<div class="flex items-center gap-3 px-space-md py-space-xs rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-tertiary text-[28px]">apartment</span>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md leading-none text-on-surface">42</span>
+<span class="font-label-sm text-label-sm text-secondary">Sekolah Kluster</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Tab Navigasi Modul -->
+<div class="relative z-10 flex items-center justify-between gap-space-sm border-b-0 pb-1">
+<div class="flex items-center gap-2 overflow-x-auto pb-1" id="tabGroup">
+<button class="tab-trigger flex items-center gap-2 px-space-md py-2.5 rounded-xl font-label-md transition-all shadow-sm bg-primary-container text-on-primary" id="tab-btn-pending" onclick="switchTab('pending')">
+<span class="material-symbols-outlined text-[18px]">pending_actions</span>
+<span>Permohonan Menunggu</span>
+<span class="ml-1 px-2 py-0.5 rounded-full bg-error text-on-error font-label-sm text-[11px] font-bold">3</span>
+</button>
+<button class="tab-trigger flex items-center gap-2 px-space-md py-2.5 rounded-xl font-label-md transition-all bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface" id="tab-btn-teachers" onclick="switchTab('teachers')">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+<span>Senarai Guru Kerjaya Berdaftar</span>
+<span class="ml-1 px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-[11px]">148</span>
+</button>
+<button class="tab-trigger flex items-center gap-2 px-space-md py-2.5 rounded-xl font-label-md transition-all bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface" id="tab-btn-schools" onclick="switchTab('schools')">
+<span class="material-symbols-outlined text-[18px]">domain</span>
+<span>Direktori 42 Sekolah &amp; Kluster</span>
+</button>
+</div>
+<div class="hidden lg:flex items-center gap-space-xs text-secondary font-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">lock</span>
+<span>Akses Terhad Pentadbir JSS</span>
+</div>
+</div>
+<!-- SEKTI PANELS WRAPPER -->
+<div class="relative z-10 flex flex-col gap-space-xl">
+<!-- BAHAGIAN A: Permohonan Akses Baharu Menunggu Kelulusan (3 Tindakan) -->
+<section class="flex flex-col gap-space-md" id="panel-pending">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">notification_important</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">
+                Permohonan Akses Baharu Menunggu Kelulusan
+              </h2>
+<p class="font-body-sm text-body-sm text-secondary">
+                3 permohonan memerlukan pengesahan identiti dan perjawatan rasmi MOE.
+              </p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-container text-primary font-label-md transition-colors" onclick="approveAllModal()">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+<span>Luluskan Semua (3)</span>
+</button>
+</div>
+</div>
+<!-- 3 Kad Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md" id="pendingCardGrid">
+<!-- Card 1 -->
+<div class="flex flex-col justify-between bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-all duration-200" id="card-applicant-1">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-3">
+<div class="relative">
+<img class="w-13 h-13 rounded-2xl object-cover shadow-sm w-12 h-12" data-alt="Professional portrait photo of an approachable Malay female teacher wearing an elegant tudung scarf and formal civil servant attire, smiling gently against a bright subtle corporate office backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQWl-aJKOThLeQWP7XKTPGXQTb3TI_I8YiNDuGNpKGpXWVAcXF3YNBVDzA62SRIrYopTKv6Cg57qccymoh0gitCvvCXG07aj_js9Vv7n_IbhLzsjcT9I5ZYCG5NHlLs5uGHzdF6anoMAURwaIz38N1qRaji96rZ_vtcBKK7UYW9rlSYzqjhLoB14L6OORioXqdWCAzm8ovAPBmyQUEJHsyvj0GnZjZTFesAwbTDvA"/>
+<span class="absolute -bottom-1 -right-1 w-3.5 h-3.5 rounded-full bg-tertiary ring-2 ring-surface-container-lowest" title="Perlu Pengesahan"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate font-bold">Cikgu Nurul Hidayah binti Haji Salleh</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">Guru Bimbingan Kerjaya</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded-md bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px] uppercase font-semibold">Baharu</span>
+</div>
+<div class="flex flex-col gap-2 p-space-sm rounded-xl bg-surface-container-low/70">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">school</span>
+<span class="truncate font-medium">SM Sayyidina Husen</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+<span class="truncate">Daerah Brunei-Muara • Kluster 3</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary-container">alternate_email</span>
+<span class="truncate font-mono text-[11px] text-primary">nurul.hidayah@moe.bn</span>
+</div>
+<div class="flex items-center justify-between text-secondary font-label-sm text-[11px] pt-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+                    Mohon: Hari Ini, 07:45 AM
+                  </span>
+<span class="text-tertiary font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">shield</span> OTP Valid
+                  </span>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center gap-2">
+<button class="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-primary-container text-on-primary font-label-md hover:bg-primary transition-all shadow-sm" onclick="approveSingle('card-applicant-1', 'Cikgu Nurul Hidayah')">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Luluskan Akaun (1-Klik)</span>
+</button>
+<button class="p-2.5 rounded-xl bg-surface-container-low text-error hover:bg-error-container hover:text-on-error-container transition-colors" onclick="rejectSingle('card-applicant-1', 'Cikgu Nurul Hidayah')" title="Tolak Permohonan">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col justify-between bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-all duration-200" id="card-applicant-2">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-3">
+<div class="relative">
+<img class="w-12 h-12 rounded-2xl object-cover shadow-sm" data-alt="Crisp professional headshot of a young Southeast Asian male school counselor with neat grooming in a dark navy blue collared formal shirt with tie, well-lit indoor environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWPk9yrg4npW9IJt8cbAmtuKxkuHHxfaFiPKIavFUhu8qkCk8gt_7aw9QLo0OwvB_Vac4BEr_gvOVaYtjtwjJ415t73npBnY-rORXihQdkB0uFndzf9F5oJuSa0tn1hD8UzpW5jjFjOKiU8Wb5BsMnBMCPbHAdGx8ggLFZhmhTubB53D8Q3ukKDHwPIcDEW6RGya4Lury8BoCZySxNz07pwhgn8VrUytF4vf_3DVw"/>
+<span class="absolute -bottom-1 -right-1 w-3.5 h-3.5 rounded-full bg-tertiary ring-2 ring-surface-container-lowest" title="Perlu Pengesahan"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate font-bold">Cikgu Mohd Firdaus bin Rosli</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">Guru Bimbingan Kaunseling &amp; Kerjaya</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-[10px] uppercase font-semibold">Semalam</span>
+</div>
+<div class="flex flex-col gap-2 p-space-sm rounded-xl bg-surface-container-low/70">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">school</span>
+<span class="truncate font-medium">Sultan Omar Ali Saifuddien College</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+<span class="truncate">Daerah Brunei-Muara • Kluster 1</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary-container">alternate_email</span>
+<span class="truncate font-mono text-[11px] text-primary">firdaus.rosli@moe.bn</span>
+</div>
+<div class="flex items-center justify-between text-secondary font-label-sm text-[11px] pt-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+                    Mohon: Semalam, 03:12 PM
+                  </span>
+<span class="text-tertiary font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">shield</span> OTP Valid
+                  </span>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center gap-2">
+<button class="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-primary-container text-on-primary font-label-md hover:bg-primary transition-all shadow-sm" onclick="approveSingle('card-applicant-2', 'Cikgu Mohd Firdaus')">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Luluskan Akaun</span>
+</button>
+<button class="p-2.5 rounded-xl bg-surface-container-low text-error hover:bg-error-container hover:text-on-error-container transition-colors" onclick="rejectSingle('card-applicant-2', 'Cikgu Mohd Firdaus')" title="Tolak Permohonan">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col justify-between bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-all duration-200" id="card-applicant-3">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-3">
+<div class="relative">
+<img class="w-12 h-12 rounded-2xl object-cover shadow-sm" data-alt="Warm studio photo of an experienced Bruneian female educator wearing traditional pastel hijab and stylish glasses with a gentle approachable demeanor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcdwrWzxZLSdJVCPjTjAyarqJH2NoIAEnavtNBRnEebANoMi_9bTkZOVDQR3reiv0eIBjnSU3rZuRwQKAyevwVqvsr9EvfbMkACWQQZ9ks-dBGiu6RnQwCeL7e09U6laEjAYHpEbTJ0QdygR1GwW3uPHQG1Vy35mKNFRTuuo8t3T6o43eR-BGdGG1jWCrfJ8j4w_tDXcaWEt0BsiylY-jMD-lU3t5wRJiMrKwwqrU"/>
+<span class="absolute -bottom-1 -right-1 w-3.5 h-3.5 rounded-full bg-tertiary ring-2 ring-surface-container-lowest" title="Perlu Pengesahan"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate font-bold">Cikgu Siti Mariam binti Osman</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">Guru Pendidikan Kerjaya</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-[10px] uppercase font-semibold">2 Hari Lepas</span>
+</div>
+<div class="flex flex-col gap-2 p-space-sm rounded-xl bg-surface-container-low/70">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">school</span>
+<span class="truncate font-medium">SM Muda Hashim</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+<span class="truncate">Daerah Tutong • Kluster 4</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary-container">alternate_email</span>
+<span class="truncate font-mono text-[11px] text-primary">mariam.osman@moe.bn</span>
+</div>
+<div class="flex items-center justify-between text-secondary font-label-sm text-[11px] pt-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+                    Mohon: 2 hari lepas, 10:20 AM
+                  </span>
+<span class="text-tertiary font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">shield</span> OTP Valid
+                  </span>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center gap-2">
+<button class="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-primary-container text-on-primary font-label-md hover:bg-primary transition-all shadow-sm" onclick="approveSingle('card-applicant-3', 'Cikgu Siti Mariam')">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Luluskan Akaun</span>
+</button>
+<button class="p-2.5 rounded-xl bg-surface-container-low text-error hover:bg-error-container hover:text-on-error-container transition-colors" onclick="rejectSingle('card-applicant-3', 'Cikgu Siti Mariam')" title="Tolak Permohonan">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- BAHAGIAN B: Direktori Guru Bimbingan Kerjaya Aktif (148 Rekod) -->
+<section class="flex flex-col gap-space-md bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm" id="panel-teachers">
+<!-- Filter and Search Toolbar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md text-on-surface">Direktori Guru Bimbingan Kerjaya Aktif</h2>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-primary font-label-sm">148 Rekod Disahkan</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+              Pangkalan data kebangsaan guru pendidikan kerjaya seluruh sekolah menengah, maktab, dan vokasional.
+            </p>
+</div>
+<!-- Search & Filter Controls -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="relative flex-1 min-w-[260px]">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full pl-10 pr-4 py-2.5 rounded-xl bg-surface-container-low text-on-surface placeholder:text-secondary font-body-sm focus:outline-none focus:ring-2 focus:ring-primary transition-all" id="searchInput" onkeyup="filterDirectory()" placeholder="Cari nama guru, emel, sekolah, atau daerah..." type="text"/>
+</div>
+<select class="px-3 py-2.5 rounded-xl bg-surface-container-low text-on-surface font-label-md text-[13px] focus:outline-none focus:ring-2 focus:ring-primary cursor-pointer" id="districtFilter" onchange="filterDirectory()">
+<option value="ALL">Semua Daerah</option>
+<option value="Brunei-Muara">Brunei-Muara</option>
+<option value="Tutong">Tutong</option>
+<option value="Belait">Belait</option>
+<option value="Temburong">Temburong</option>
+</select>
+<button class="flex items-center gap-1.5 px-3 py-2.5 rounded-xl bg-surface-container-high hover:bg-surface-container text-primary font-label-md transition-colors" onclick="exportDirectoryCSV()" title="Muat Turun Data CSV">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span class="hidden sm:inline">Eksport CSV</span>
+</button>
+</div>
+</div>
+<!-- Directory Table -->
+<div class="overflow-x-auto rounded-xl bg-surface-container-lowest">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface font-label-sm text-[12px] uppercase tracking-wider">
+<th class="py-3.5 px-space-md rounded-l-xl">Nama Guru &amp; Jawatan</th>
+<th class="py-3.5 px-space-md">Emel Rasmi (.moe.bn)</th>
+<th class="py-3.5 px-space-md">Institusi Sekolah</th>
+<th class="py-3.5 px-space-md">Daerah &amp; Kluster</th>
+<th class="py-3.5 px-space-md">Status Capaian</th>
+<th class="py-3.5 px-space-md text-right rounded-r-xl">Tindakan</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low/60 font-body-md text-body-md text-on-surface" id="directoryTableBody">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors teacher-row" data-district="Brunei-Muara" data-email="ahmad.tahir@moe.bn" data-name="Haji Awang Ahmad bin Tahir" data-school="Maktab Sains Paduka Seri Begawan Sultan">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center font-bold font-label-md">
+                      AT
+                    </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Haji Awang Ahmad bin Tahir</span>
+<span class="font-body-sm text-body-sm text-secondary">Ketua Guru Kerjaya (K-UPK)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md font-mono text-[12px] text-primary">ahmad.tahir@moe.bn</td>
+<td class="py-3.5 px-space-md font-medium text-on-surface">Maktab Sains Paduka Seri Begawan Sultan</td>
+<td class="py-3.5 px-space-md text-on-surface-variant font-body-sm">Daerah Brunei-Muara (Kluster 1)</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-[11px] font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                    Aktif &amp; Disahkan
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm transition-colors text-[12px]" onclick="editRoleModal('Haji Awang Ahmad bin Tahir', 'Ketua Guru Kerjaya')">
+                      Sunting Peranan
+                    </button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-secondary hover:text-on-surface transition-colors" onclick="viewActivityLog('ahmad.tahir@moe.bn')" title="Log Aktiviti">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors teacher-row" data-district="Brunei-Muara" data-email="noraliza.matassan@moe.bn" data-name="Dayang Noraliza binti Matassan" data-school="Sekolah Menengah Pengiran Isteri Hajjah Mariam">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-bold font-label-md">
+                      NM
+                    </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Dayang Noraliza binti Matassan</span>
+<span class="font-body-sm text-body-sm text-secondary">Guru Kaunseling &amp; Kerjaya</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md font-mono text-[12px] text-primary">noraliza.matassan@moe.bn</td>
+<td class="py-3.5 px-space-md font-medium text-on-surface">SM Pengiran Isteri Hajjah Mariam (Serasa)</td>
+<td class="py-3.5 px-space-md text-on-surface-variant font-body-sm">Daerah Brunei-Muara (Kluster 4)</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-[11px] font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                    Aktif &amp; Disahkan
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm transition-colors text-[12px]" onclick="editRoleModal('Dayang Noraliza binti Matassan', 'Guru Kaunseling &amp; Kerjaya')">
+                      Sunting Peranan
+                    </button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-secondary hover:text-on-surface transition-colors" onclick="viewActivityLog('noraliza.matassan@moe.bn')" title="Log Aktiviti">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors teacher-row" data-district="Tutong" data-email="sufri.damit@moe.bn" data-name="Awang Sufri bin Pengiran Damit" data-school="Sekolah Menengah Sufri Bolkiah">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center font-bold font-label-md">
+                      SD
+                    </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Awang Sufri bin Pengiran Damit</span>
+<span class="font-body-sm text-body-sm text-secondary">Guru Bimbingan Kerjaya</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md font-mono text-[12px] text-primary">sufri.damit@moe.bn</td>
+<td class="py-3.5 px-space-md font-medium text-on-surface">SM Sufri Bolkiah</td>
+<td class="py-3.5 px-space-md text-on-surface-variant font-body-sm">Daerah Tutong (Kluster 5)</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-[11px] font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                    Aktif &amp; Disahkan
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm transition-colors text-[12px]" onclick="editRoleModal('Awang Sufri bin Pengiran Damit', 'Guru Bimbingan Kerjaya')">
+                      Sunting Peranan
+                    </button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-secondary hover:text-on-surface transition-colors" onclick="viewActivityLog('sufri.damit@moe.bn')" title="Log Aktiviti">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors teacher-row" data-district="Belait" data-email="zainab.ismail@moe.bn" data-name="Dayangku Zainab binti Pg Hj Ismail" data-school="Sekolah Menengah Sayyidina Ali">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold font-label-md">
+                      ZI
+                    </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Dayangku Zainab binti Pg Hj Ismail</span>
+<span class="font-body-sm text-body-sm text-secondary">Guru Kerjaya &amp; Penempatan Industri</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md font-mono text-[12px] text-primary">zainab.ismail@moe.bn</td>
+<td class="py-3.5 px-space-md font-medium text-on-surface">SM Sayyidina Ali (Kuala Belait)</td>
+<td class="py-3.5 px-space-md text-on-surface-variant font-body-sm">Daerah Belait (Kluster 6)</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-[11px] font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                    Aktif &amp; Disahkan
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm transition-colors text-[12px]" onclick="editRoleModal('Dayangku Zainab binti Pg Hj Ismail', 'Guru Kerjaya &amp; Penempatan')">
+                      Sunting Peranan
+                    </button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-secondary hover:text-on-surface transition-colors" onclick="viewActivityLog('zainab.ismail@moe.bn')" title="Log Aktiviti">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors teacher-row" data-district="Temburong" data-email="khairul.jamil@moe.bn" data-name="Awang Mohammad Khairul bin Jamil" data-school="Sekolah Menengah Sultan Hassan">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center font-bold font-label-md">
+                      KJ
+                    </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Awang Mohammad Khairul bin Jamil</span>
+<span class="font-body-sm text-body-sm text-secondary">Guru Kerjaya &amp; Kaunseling</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md font-mono text-[12px] text-primary">khairul.jamil@moe.bn</td>
+<td class="py-3.5 px-space-md font-medium text-on-surface">SM Sultan Hassan (Bangar)</td>
+<td class="py-3.5 px-space-md text-on-surface-variant font-body-sm">Daerah Temburong (Kluster 7)</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-[11px] font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                    Aktif &amp; Disahkan
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm transition-colors text-[12px]" onclick="editRoleModal('Awang Mohammad Khairul bin Jamil', 'Guru Kerjaya &amp; Kaunseling')">
+                      Sunting Peranan
+                    </button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-secondary hover:text-on-surface transition-colors" onclick="viewActivityLog('khairul.jamil@moe.bn')" title="Log Aktiviti">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination and Counter -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-xs text-secondary font-label-sm">
+<span>Menunjukkan 1 - 5 daripada 148 guru berdaftar</span>
+<div class="flex items-center gap-1">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-secondary hover:bg-surface-container hover:text-on-surface transition-colors" disabled="">
+              Sebelum
+            </button>
+<button class="w-8 h-8 rounded-lg bg-primary-container text-on-primary font-bold flex items-center justify-center">1</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container flex items-center justify-center">2</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container flex items-center justify-center">3</button>
+<span class="px-1 text-outline">...</span>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container flex items-center justify-center">30</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors">
+              Seterusnya
+            </button>
+</div>
+</div>
+</section>
+<!-- Direktori Ringkas 42 Sekolah & Kluster (Secondary Sub-view) -->
+<section class="hidden flex-col gap-space-md bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm" id="panel-schools">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Peta Kluster &amp; Direktori 42 Sekolah Kebangsaan</h2>
+<p class="font-body-sm text-body-sm text-secondary">Pengelompokan kluster JSS Kementerian Pendidikan Negara Brunei Darussalam</p>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm">Kluster 1 hingga 7</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Kluster Card 1 -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-low/70 gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-on-surface font-bold">Kluster 1 &amp; 2</span>
+<span class="font-label-sm text-primary">12 Sekolah</span>
+</div>
+<p class="font-body-sm text-secondary">Bandar Seri Begawan &amp; Sekitarnya</p>
+<div class="pt-2 flex flex-col gap-1 text-[12px] font-body-sm text-on-surface">
+<span>• SOASC (Kolej SOAS)</span>
+<span>• Maktab Sains PSBS</span>
+<span>• Maktab Duli PM Al-Muhtadee Billah</span>
+</div>
+</div>
+<!-- Kluster Card 2 -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-low/70 gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-on-surface font-bold">Kluster 3 &amp; 4</span>
+<span class="font-label-sm text-primary">14 Sekolah</span>
+</div>
+<p class="font-body-sm text-secondary">Brunei-Muara Pesisir &amp; Luar Bandar</p>
+<div class="pt-2 flex flex-col gap-1 text-[12px] font-body-sm text-on-surface">
+<span>• SM Sayyidina Husen</span>
+<span>• SM Awang Semaun</span>
+<span>• SM Pehin Datu Seri Maharaja</span>
+</div>
+</div>
+<!-- Kluster Card 3 -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-low/70 gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-on-surface font-bold">Kluster 5 (Tutong)</span>
+<span class="font-label-sm text-primary">8 Sekolah</span>
+</div>
+<p class="font-body-sm text-secondary">Daerah Tutong</p>
+<div class="pt-2 flex flex-col gap-1 text-[12px] font-body-sm text-on-surface">
+<span>• SM Muda Hashim</span>
+<span>• SM Sufri Bolkiah</span>
+<span>• SM Tanjong Maya</span>
+</div>
+</div>
+<!-- Kluster Card 4 -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-low/70 gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-on-surface font-bold">Kluster 6 &amp; 7</span>
+<span class="font-label-sm text-primary">8 Sekolah</span>
+</div>
+<p class="font-body-sm text-secondary">Belait &amp; Temburong</p>
+<div class="pt-2 flex flex-col gap-1 text-[12px] font-body-sm text-on-surface">
+<span>• SM Sayyidina Ali (KB)</span>
+<span>• SM Perdana Wazir</span>
+<span>• SM Sultan Hassan (Temburong)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- BAHAGIAN BAWAH: Integrasi Gov.bn ID Gateway & Audit Keselamatan Sesi HMAC -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Left: Gov.bn Gateway Card -->
+<div class="lg:col-span-7 flex flex-col justify-between p-space-lg rounded-2xl bg-surface-container-low">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">fingerprint</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">
+                  Integrasi Gov.bn ID Gateway (SSO &amp; 2FA)
+                </h3>
+<span class="font-body-sm text-body-sm text-secondary">Standard Autentikasi Kebangsaan E-Kerajaan</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Semua guru pendidikan kerjaya wajib mengesahkan pendaftaran menggunakan akaun rasmi <code>@moe.bn</code> yang disegerakkan ke pangkalan data Pusat Kebangsaan E-Kerajaan (EGNC) melalui protokol OAuth 2.0 &amp; HMAC-SHA256 Token Session.
+            </p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-xs">
+<div class="p-3 rounded-xl bg-surface-container-lowest">
+<span class="font-label-sm text-secondary block">Gateway Status</span>
+<span class="font-label-md text-primary flex items-center gap-1 mt-0.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                  Bersambung (99.98%)
+                </span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-lowest">
+<span class="font-label-sm text-secondary block">Masa Tindak Balas</span>
+<span class="font-label-md text-on-surface mt-0.5">42 ms (Direct Fiber)</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-lowest">
+<span class="font-label-sm text-secondary block">Tamat Tempoh Kunci</span>
+<span class="font-label-md text-tertiary mt-0.5">14 Hari Lagi</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between border-t-0">
+<span class="font-body-sm text-body-sm text-secondary">Protokol Keselamatan: TLS 1.3 / FIPS 140-2</span>
+<button class="flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-container text-primary font-label-md transition-colors" onclick="testGatewayPing()">
+<span class="material-symbols-outlined text-[16px]">sensors</span>
+<span>Uji Sambungan Gateway</span>
+</button>
+</div>
+</div>
+<!-- Right: Audit Keselamatan Log Masuk Sesi HMAC -->
+<div class="lg:col-span-5 flex flex-col justify-between p-space-lg rounded-2xl bg-inverse-surface text-inverse-on-surface">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[20px]">policy</span>
+<h3 class="font-headline-md text-[16px] text-surface-container-lowest font-bold">
+                  Audit Log Masuk HMAC
+                </h3>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest/20 text-surface-container-lowest font-label-sm text-[10px]">
+                Live Stream
+              </span>
+</div>
+<p class="font-body-sm text-surface-container-highest/80 text-[12px]">
+              Tiga rekod keselamatan sesi terminal terkini yang disahkan oleh sistem:
+            </p>
+<div class="flex flex-col gap-2 pt-1">
+<div class="p-2.5 rounded-xl bg-surface-container-highest/10 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[16px] mt-0.5">token</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-[12px] text-surface-container-lowest truncate">Token Signed: ahmad.tahir@moe.bn</span>
+<span class="font-mono text-[10px] text-surface-container-highest/70 truncate">HMAC-SHA256: 4b9f8e...71c2 (IP: 202.160.15.4)</span>
+<span class="font-body-sm text-[10px] text-surface-container-highest/50">2 minit lepas • Kluster 1 Portal</span>
+</div>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-highest/10 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[16px] mt-0.5">token</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-[12px] text-surface-container-lowest truncate">OTP Verified: noraliza.matassan@moe.bn</span>
+<span class="font-mono text-[10px] text-surface-container-highest/70 truncate">HMAC-SHA256: 9e32a1...bc84 (IP: 202.160.18.22)</span>
+<span class="font-body-sm text-[10px] text-surface-container-highest/50">14 minit lepas • 2FA Mobile App</span>
+</div>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-highest/10 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[16px] mt-0.5">token</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-[12px] text-surface-container-lowest truncate">Access Granted: Pentadbir UPK JSS</span>
+<span class="font-mono text-[10px] text-surface-container-highest/70 truncate">HMAC-SHA256: f178bb...0109 (Intranet JSS)</span>
+<span class="font-body-sm text-[10px] text-surface-container-highest/50">38 minit lepas • Admin Superuser</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between text-[11px] text-surface-container-highest/70">
+<span>Enkripsi 256-bit Aktif</span>
+<a class="text-tertiary-fixed-dim hover:underline flex items-center gap-1 font-label-sm" href="#" onclick="alert('Log audit penuh disimpan dalam pelayan arkib selama 365 hari.'); return false;">
+<span>Lihat Rekod Arkib Penuh</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- Notification Toast Container -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-3 px-space-md py-3 rounded-xl bg-inverse-surface text-inverse-on-surface shadow-xl" id="toastNotification">
+<span class="material-symbols-outlined text-tertiary-fixed-dim" id="toastIcon">check_circle</span>
+<span class="font-label-md text-sm" id="toastMsg">Tindakan berjaya diproses.</span>
+</div>
+<!-- Inline Micro-interactions Script -->
+<script>
+    function showToast(message, isSuccess = true) {
+      const toast = document.getElementById('toastNotification');
+      const msg = document.getElementById('toastMsg');
+      const icon = document.getElementById('toastIcon');
+      
+      msg.textContent = message;
+      icon.textContent = isSuccess ? 'verified' : 'info';
+      icon.className = isSuccess ? 'material-symbols-outlined text-tertiary-fixed-dim' : 'material-symbols-outlined text-error-container';
+
+      toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+      setTimeout(() => {
+        toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+      }, 3500);
+    }
+
+    function switchTab(tabId) {
+      const panelPending = document.getElementById('panel-pending');
+      const panelTeachers = document.getElementById('panel-teachers');
+      const panelSchools = document.getElementById('panel-schools');
+
+      const btnPending = document.getElementById('tab-btn-pending');
+      const btnTeachers = document.getElementById('tab-btn-teachers');
+      const btnSchools = document.getElementById('tab-btn-schools');
+
+      const resetBtn = (btn) => {
+        btn.className = 'tab-trigger flex items-center gap-2 px-space-md py-2.5 rounded-xl font-label-md transition-all bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface';
+      };
+
+      const activeBtn = (btn) => {
+        btn.className = 'tab-trigger flex items-center gap-2 px-space-md py-2.5 rounded-xl font-label-md transition-all shadow-sm bg-primary-container text-on-primary';
+      };
+
+      resetBtn(btnPending);
+      resetBtn(btnTeachers);
+      resetBtn(btnSchools);
+
+      if (tabId === 'pending') {
+        panelPending.classList.remove('hidden');
+        panelTeachers.classList.remove('hidden');
+        panelSchools.classList.add('hidden');
+        activeBtn(btnPending);
+      } else if (tabId === 'teachers') {
+        panelPending.classList.add('hidden');
+        panelTeachers.classList.remove('hidden');
+        panelSchools.classList.add('hidden');
+        activeBtn(btnTeachers);
+      } else if (tabId === 'schools') {
+        panelPending.classList.add('hidden');
+        panelTeachers.classList.add('hidden');
+        panelSchools.classList.remove('hidden');
+        activeBtn(btnSchools);
+      }
+    }
+
+    function approveSingle(cardId, teacherName) {
+      const card = document.getElementById(cardId);
+      if (card) {
+        card.style.transform = 'scale(0.95)';
+        card.style.opacity = '0';
+        setTimeout(() => {
+          card.remove();
+          showToast(`Akaun ${teacherName} telah berjaya diluluskan dan diaktifkan.`);
+        }, 250);
+      }
+    }
+
+    function rejectSingle(cardId, teacherName) {
+      if (confirm(`Adakah anda pasti untuk menolak permohonan pendaftaran ${teacherName}?`)) {
+        const card = document.getElementById(cardId);
+        if (card) {
+          card.style.transform = 'scale(0.95)';
+          card.style.opacity = '0';
+          setTimeout(() => {
+            card.remove();
+            showToast(`Permohonan ${teacherName} telah ditolak. Notifikasi emel dihantar.`, false);
+          }, 250);
+        }
+      }
+    }
+
+    function approveAllModal() {
+      if (confirm('Luluskan kesemua 3 permohonan guru yang sedang menunggu?')) {
+        const grid = document.getElementById('pendingCardGrid');
+        grid.innerHTML = `
+          <div class="col-span-full p-8 rounded-2xl bg-surface-container-low text-center flex flex-col items-center justify-center gap-2">
+            <span class="material-symbols-outlined text-primary text-[42px]">check_circle</span>
+            <span class="font-headline-md text-on-surface">Semua permohonan telah selesai diproses!</span>
+            <span class="font-body-sm text-secondary">Tiada permohonan pendaftaran guru baharu yang menunggu kelulusan saat ini.</span>
+          </div>
+        `;
+        showToast('Kesemua 3 guru telah diluluskan serentak.');
+      }
+    }
+
+    function filterDirectory() {
+      const query = document.getElementById('searchInput').value.toLowerCase();
+      const district = document.getElementById('districtFilter').value;
+      const rows = document.querySelectorAll('.teacher-row');
+
+      rows.forEach(row => {
+        const name = row.getAttribute('data-name').toLowerCase();
+        const school = row.getAttribute('data-school').toLowerCase();
+        const email = row.getAttribute('data-email').toLowerCase();
+        const rowDistrict = row.getAttribute('data-district');
+
+        const matchesQuery = name.includes(query) || school.includes(query) || email.includes(query);
+        const matchesDistrict = (district === 'ALL') || (rowDistrict === district);
+
+        if (matchesQuery && matchesDistrict) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+
+    function exportDirectoryCSV() {
+      showToast('Menjana fail CSV Direktori Guru Kebangsaan (148 rekod)...');
+    }
+
+    function editRoleModal(name, role) {
+      showToast(`Membuka modal konfigurasi peranan RBAC bagi ${name} (${role})`);
+    }
+
+    function viewActivityLog(email) {
+      showToast(`Memaparkan rekod audit aktiviti log masuk bagi ${email}`);
+    }
+
+    function testGatewayPing() {
+      showToast('Penyegerakan Gov.bn ID Gateway: Respons 200 OK (38ms latency)');
+    }
+  </script>
+</div></main></div></body></html>

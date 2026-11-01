@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ms" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#006390">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>CEU Portal v1.1</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans + Inter + Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN with custom config (synced with Stitch prototype) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary:                    '#006390',
+            'primary-container':        '#167db2',
+            'on-primary':               '#ffffff',
+            'on-primary-container':     '#ffffff',
+            'on-primary-fixed':         '#001e2f',
+            'on-primary-fixed-variant': '#004b6f',
+            secondary:                  '#526069',
+            'secondary-container':      '#d3e2ed',
+            'secondary-fixed':          '#d6e5ef',
+            'secondary-fixed-dim':      '#bac9d3',
+            'on-secondary':             '#ffffff',
+            'on-secondary-container':   '#56656e',
+            'on-secondary-fixed':       '#0f1d25',
+            'on-secondary-fixed-variant':'#3b4951',
+            tertiary:                   '#765900',
+            'tertiary-container':       '#947100',
+            'on-tertiary':              '#ffffff',
+            'on-tertiary-container':    '#ffffff',
+            'on-tertiary-fixed':        '#251a00',
+            'on-tertiary-fixed-variant':'#5a4300',
+            'tertiary-fixed':           '#ffdf98',
+            'tertiary-fixed-dim':       '#eec14b',
+            error:                      '#ba1a1a',
+            'error-container':          '#ffdad6',
+            'on-error':                 '#ffffff',
+            'on-error-container':       '#93000a',
+            surface:                    '#f8f9ff',
+            'surface-dim':              '#c1ddfe',
+            'surface-bright':           '#f8f9ff',
+            'surface-tint':             '#006492',
+            'surface-variant':          '#d0e4ff',
+            'surface-container-lowest': '#ffffff',
+            'surface-container-low':    '#eef4ff',
+            'surface-container':        '#e4efff',
+            'surface-container-high':   '#daeaff',
+            'surface-container-highest':'#d0e4ff',
+            'on-surface':               '#001d35',
+            'on-surface-variant':       '#3f484f',
+            outline:                    '#707880',
+            'outline-variant':          '#bfc7d0',
+            'inverse-surface':          '#16324c',
+            'inverse-on-surface':       '#e9f1ff',
+            'inverse-primary':          '#8bceff',
+            'primary-fixed':            '#c9e6ff',
+            'primary-fixed-dim':        '#8bceff',
+            background:                 '#f8f9ff',
+            'on-background':            '#001d35',
+          },
+          fontFamily: {
+            headline:    ['"Plus Jakarta Sans"', 'sans-serif'],
+            body:        ['Inter', 'sans-serif'],
+            'headline-lg':         ['"Plus Jakarta Sans"'],
+            'headline-md':         ['"Plus Jakarta Sans"'],
+            'headline-xl':         ['"Plus Jakarta Sans"'],
+            'headline-xl-mobile':  ['"Plus Jakarta Sans"'],
+            'title-sm':            ['"Plus Jakarta Sans"'],
+            'label-md':            ['Inter'],
+            'label-sm':            ['Inter'],
+            'body-lg':             ['Inter'],
+            'body-md':             ['Inter'],
+            'body-sm':             ['Inter'],
+          },
+          fontSize: {
+            'headline-xl':        ['2rem',     { lineHeight: '2.5rem',   letterSpacing: '-0.02em',  fontWeight: '700' }],
+            'headline-xl-mobile': ['1.625rem', { lineHeight: '2.125rem', letterSpacing: '-0.015em', fontWeight: '700' }],
+            'headline-lg':        ['1.5rem',   { lineHeight: '2rem',     letterSpacing: '-0.01em',  fontWeight: '600' }],
+            'headline-md':        ['1.25rem',  { lineHeight: '1.75rem',  letterSpacing: '-0.005em', fontWeight: '600' }],
+            'title-sm':           ['1.125rem', { lineHeight: '1.5rem',   fontWeight: '600' }],
+            'label-md':           ['0.875rem', { lineHeight: '1.25rem',  letterSpacing: '0.01em',   fontWeight: '600' }],
+            'label-sm':           ['0.75rem',  { lineHeight: '1rem',     letterSpacing: '0.02em',   fontWeight: '600' }],
+            'body-lg':            ['1rem',     { lineHeight: '1.625rem', fontWeight: '400' }],
+            'body-md':            ['0.875rem', { lineHeight: '1.375rem', fontWeight: '400' }],
+            'body-sm':            ['0.75rem',  { lineHeight: '1.125rem', fontWeight: '400' }],
+          },
+          spacing: {
+            'safe-top':       'env(safe-area-inset-top)',
+            'safe-bottom':    'env(safe-area-inset-bottom)',
+            'safe-left':      'env(safe-area-inset-left)',
+            'safe-right':     'env(safe-area-inset-right)',
+            'space-xs':       '0.25rem',
+            'space-sm':       '0.5rem',
+            'space-md':       '1rem',
+            'space-lg':       '1.5rem',
+            'space-xl':       '2rem',
+            'gutter':         '1rem',
+            'gutter-desktop': '1.5rem',
+            'margin':         '1rem',
+            'margin-desktop': '2rem',
+          },
+          borderRadius: {
+            'card':  '1rem',
+            'input': '0.75rem',
+            'btn':   '10px',
+            'pill':  '9999px',
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-background text-on-surface font-body antialiased min-h-screen overflow-x-hidden">
+
+  <!-- ======================================== -->
+  <!-- STICKY TOP BAR                           -->
+  <!-- ======================================== -->
+  <header id="app-header"
+    class="fixed top-0 left-0 right-0 z-40 h-16 bg-white/90 backdrop-blur-md border-b border-outline-variant/30 hidden"
+    style="padding-top: env(safe-area-inset-top);">
+    <!-- Rendered dynamically by ui.js renderTopBar() -->
+  </header>
+
+  <!-- ======================================== -->
+  <!-- MAIN SCROLLABLE CONTENT                  -->
+  <!-- ======================================== -->
+  <main id="app-content" class="min-h-screen transition-all duration-200">
+    <!-- Pages rendered here by app.js router -->
+  </main>
+
+  <!-- ======================================== -->
+  <!-- FIXED BOTTOM NAV BAR (MOBILE)            -->
+  <!-- ======================================== -->
+  <nav id="app-nav"
+    class="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-outline-variant/30 hidden"
+    style="padding-bottom: env(safe-area-inset-bottom);">
+    <!-- Rendered dynamically by ui.js renderBottomNav() -->
+  </nav>
+
+  <!-- ======================================== -->
+  <!-- ADMIN SIDEBAR (DESKTOP)                  -->
+  <!-- ======================================== -->
+  <aside id="app-sidebar" class="fixed top-0 left-0 bottom-0 z-50 hidden">
+    <!-- Rendered dynamically by ui.js renderAdminSidebar() -->
+  </aside>
+
+  <!-- ======================================== -->
+  <!-- TOAST NOTIFICATION CONTAINER             -->
+  <!-- ======================================== -->
+  <div id="toast-container"
+    class="fixed bottom-20 left-4 right-4 z-[100] flex flex-col items-center gap-2 pointer-events-none"
+    style="bottom: calc(80px + env(safe-area-inset-bottom));">
+  </div>
+
+  <!-- ======================================== -->
+  <!-- MODAL OVERLAY CONTAINER                  -->
+  <!-- ======================================== -->
+  <div id="modal-overlay"
+    class="fixed inset-0 z-[90] bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 hidden opacity-0 transition-opacity duration-200">
+  </div>
+
+  <!-- ======================================== -->
+  <!-- SCRIPTS (loaded in order)                -->
+  <!-- ======================================== -->
+  <script src="js/config.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/ui.js" defer></script>
+  <!-- Page modules -->
+  <script src="js/pages/home.js" defer></script>
+  <script src="js/pages/calendar.js" defer></script>
+  <script src="js/pages/rsvp.js" defer></script>
+  <script src="js/pages/documents.js" defer></script>
+  <script src="js/pages/notifications.js" defer></script>
+  <script src="js/pages/profile.js" defer></script>
+  <script src="js/pages/admin-dashboard.js" defer></script>
+  <script src="js/pages/admin-events.js" defer></script>
+  <script src="js/pages/admin-docs.js" defer></script>
+  <script src="js/pages/admin-broadcast.js" defer></script>
+  <script src="js/pages/admin-users.js" defer></script>
+  <!-- SPA Core Router Engine -->
+  <script src="js/app.js" defer></script>
+
+</body>
+</html>
